@@ -132,4 +132,78 @@ body {
   }
 /* End of Navbar */
 
+
+/* Header section */
+  .header {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10rem;
+    background: url("images/Mob-main.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+  }
+
+  .header1 {
+    margin-top: 4.5rem;
+    width: 20.4rem;
+    height: 12rem;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.6rem;
+    line-height: 3.2rem;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: var(--Primary-text-color);
+  }
+
+  .header2 {
+    /* margin-top: -5.5rem; */
+    width: 20.4rem;
+    height: 12rem;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.2rem;
+    letter-spacing: 2px;
+    text-align: center;
+    color: var(--buttons-color);
+ border: red solid 3px
+  }
+
+  .header-detail {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    width: 22.29rem;
+    height: 164px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.40rem;
+    line-height: 1.75rem;
+    text-align: center;
+    color: var(--Primary-text-color);
+    
+     border: red solid 3px
+  }
+
+  .social {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    border: red solid 3px
+    ;
+  }
+  .Arrow {
+    margin-bottom: 0;
+    margin-top: 5rem;
+  }
+  /* End of Header section */
 }
