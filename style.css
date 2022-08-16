@@ -34,3 +34,102 @@ body {
 }
 
 /* End of Common Styles */
+
+@media (max-width: 750px) {
+  /* Navbar */
+
+  .navbar {
+    display: block;
+    width: 50%;
+    height: 2.75rem;
+    margin: 20px 12px;
+  }
+
+  .Hamburger {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    width: 18px;
+    height: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    right: 36.612px;
+    top: 45px;
+
+    /* border: red solid 3px;  */
+  }
+
+  .bar {
+    display: block;
+    position: relative;
+
+    width: hug(16px);
+    height: 2px;
+    background-color: var(--Primary-text-color);
+  }
+
+  .HamburgerX {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    width: 18px;
+    height: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    right: 36.612px;
+    top: 20px;
+
+    /* border: red solid 3px;  */
+  }
+
+  .barX {
+    display: none;
+    position: relative;
+    width: hug(16px);
+    height: 2px;
+    background-color: var(--Primary-text-color);
+  }
+
+  .welcome {
+    width: hug(5.625rem);
+    height: hug(2rem);
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.95rem;
+    display: flex;
+    align-items:center;
+    text-align:center;
+    color: #28352f;
+    margin-left: 1rem;
+    
+    }
+
+  .Menu-items {
+    display: none;
+    position: absolute;
+    height: 100px;
+    width: 30%;
+    left: 20px;
+    top: 98px;
+  }
+
+  .nav--link {
+    /* Theme 2 / H3 */
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    padding-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    color: var(--Primary-text-color2);
+  }
+/* End of Navbar */
+
+}
