@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* Common styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border - box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  font-family: "Inter";
+  font-weight: 400;
+  /* border: red solid 3px; */
+}
+
+html {
+  font-size: 62.5%;
+  --white: #fff;
+  --buttons-color: #36b37f;
+  --Primary-text-color: #172b4d;
+  --Primary-text-color2: #3a4a42;
+  --lighterG1: #c5e9da;
+  --lighterG2: #ebf0ee;
+  --Pressed: #008552;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.main-wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+/* End of Common Styles */
