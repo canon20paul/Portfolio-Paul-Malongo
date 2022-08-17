@@ -391,11 +391,28 @@ body {
     height: 100%;
     background: url("images/aboutt1.png");
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: auto;
+    background-size: contain;
+    object-fit: fill;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 8rem;
+  }
+
+  .about::after {
+    content: url("images/about3.png");
+    position: relative;
+    bottom: 20rem;
+    left: 14rem;
+    width: 55%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: fill;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 8rem;
   }
 
   .about-header {
@@ -429,23 +446,18 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 12px;
-    gap: 5px;
-
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 2px;
     width: 159px;
     height: 48px;
-
-    /* Theme 2 / Primary 2 */
-
-    background: #36b37f;
+    background: var(--buttons-color);
     border-radius: 4px;
     color: var(--white);
-
-    /* Inside auto layout */
-
     flex: none;
+    position: relative;
+    bottom: 14rem;
     order: 2;
-    flex-grow: 0;
   }
 
   /* End of About section */
