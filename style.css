@@ -8,7 +8,7 @@
   text-decoration: none;
   list-style: none;
   outline: none;
-  font-family: "Inter", 'Courier New', Courier, monospace;
+  font-family: "Inter", "Courier New", Courier, monospace;
   font-weight: 400;
 }
 
@@ -40,10 +40,10 @@ body {
   /* Navbar */
 
   .navbar {
-    display: block;
-    width: 50%;
+    display: flex;
+    width: 90%;
     height: 2.75rem;
-    margin: 20px 12px;
+    margin: 12px 19px;
   }
 
   .Hamburger {
@@ -55,7 +55,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     right: 36.612px;
-    top: 40px;
+    top: 26px;
 
     /* border: red solid 3px;  */
   }
@@ -93,13 +93,13 @@ body {
   .welcome {
     width: hug(5.625rem);
     height: hug(2rem);
-    font-family: "Inter", 'Courier New', Courier, monospace;
+    font-family: "Inter", "Courier New", Courier, monospace;
     font-style: normal;
     font-weight: 600;
     font-size: 1.4rem;
     line-height: 1.95rem;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     text-align: center;
     color: #28352f;
     margin-left: 1rem;
@@ -117,7 +117,7 @@ body {
   .nav--link {
     /* Theme 2 / H3 */
 
-    font-family: "Inter", 'Courier New', Courier, monospace;
+    font-family: "Inter", "Courier New", Courier, monospace;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
@@ -134,10 +134,11 @@ body {
   .header {
     width: 100%;
     height: 100%;
-    padding-bottom: 10rem;
+    padding-bottom: 8.55rem;
     background: url("images/Mob-main.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
+    background-position: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -147,26 +148,25 @@ body {
     margin-top: 4.5rem;
     width: 20.4rem;
     height: 12rem;
-    font-family: "Inter", 'Courier New', Courier, monospace;
+    font-family: "Inter", "Courier New", Courier, monospace;
     font-style: normal;
     font-weight: 700;
-    font-size: 2.6rem;
+    font-size: 2.7rem;
     line-height: 3.2rem;
-    letter-spacing: 1.5px;
     text-align: center;
     color: var(--Primary-text-color);
   }
 
-  .header2 {
+  .header1::after {
     /* margin-top: -5.5rem; */
+    content: "        I'm a software developer";
     width: 20.4rem;
     height: 12rem;
-    font-family: "Inter", 'Courier New', Courier, monospace;
+    font-family: "Inter", "Courier New", Courier, monospace;
     font-style: normal;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     line-height: 3.2rem;
-    letter-spacing: 2px;
     text-align: center;
     color: var(--buttons-color);
   }
@@ -176,7 +176,7 @@ body {
     margin-bottom: 5rem;
     width: 22.29rem;
     height: 164px;
-    font-family: "Inter", 'Courier New', Courier, monospace;
+    font-family: "Inter", "Courier New", Courier, monospace;
     font-style: normal;
     font-weight: 400;
     font-size: 1.4rem;
@@ -190,6 +190,7 @@ body {
     margin: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .Arrow {
@@ -198,4 +199,48 @@ body {
   }
 
   /* End of Header section */
+
+  /* Works section */
+
+  .works {
+    /* height:150vh */
+    margin: 0 2rem;
+    border-color: #f00;
+    height: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 650px 650px 650px 650px 7650px 650px 650px 650px 650px 650px 650px;
+    grid-gap: 10px;
+    grid-template-areas:
+      "title"
+      "Work1"
+      "Work2"
+      "Work3"
+      "Work4"
+      "Work5"
+      "Work6"
+      "about"
+      "languages"
+      "Frameworks"
+      "skills";
+  }
+
+  .title {
+    grid-area: title;
+    margin: 6rem 0;
+  }
+
+  .works-title {
+    font-family: "Inter" "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--Primary-text-color);
+  }
+
+  /* End of Works section */
 }
