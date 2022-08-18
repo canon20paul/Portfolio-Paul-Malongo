@@ -216,11 +216,7 @@ button:active {
       "Work3"
       "Work4"
       "Work5"
-      "Work6"
-      "about"
-      "languages"
-      "frameworks"
-      "skills";
+      "Work6";
   }
 
   .title {
@@ -383,6 +379,20 @@ button:active {
   /* End of Works section */
 
   /* About section */
+
+  .about-section {
+    height: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 420px 352px 352px 352px;
+    grid-gap: 23px;
+    grid-template-areas:
+      "about"
+      "languages"
+      "frameworks"
+      "skills";
+  }
+
   .about {
     grid-area: about;
     width: 95%;
