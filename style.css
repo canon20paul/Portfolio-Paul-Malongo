@@ -34,6 +34,10 @@ body {
   height: 100vh;
 }
 
+button:active {
+  background-color: var(--Pressed);
+}
+
 /* End of Common Styles */
 
 @media (max-width: 750px) {
