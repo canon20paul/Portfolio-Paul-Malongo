@@ -42,6 +42,7 @@ button:active {
 
 /* End of Common Styles */
 
+<<<<<<< HEAD
 /* Desktop version */
 .navbar {
   display: flex;
@@ -342,6 +343,19 @@ button:active {
     top: 26px;
     z-index: 20;
   }
+=======
+.Hamburger {
+  position: absolute;
+  cursor: pointer;
+  width: 18px;
+  height: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  right: 36.612px;
+  top: 26px;
+}
+>>>>>>> 64d2207974b835e8d45dbc1d5ffdca647daa1f2d
 
   .bar {
     display: block;
