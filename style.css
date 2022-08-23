@@ -42,282 +42,6 @@ button:active {
 
 /* End of Common Styles */
 
-<<<<<<< HEAD
-/* Desktop version */
-.navbar {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  width: 100%;
-  height: 2.75rem;
-  margin: 12px 19px;
-}
-
-.welcome {
-  display: none;
-}
-
-.Menu-items {
-  display: flex;
-  height: 100px;
-  width: 30%;
-  left: 20px;
-  top: 98px;
-}
-
-.nav--link {
-  font-family: "Inter", "Courier New", Courier, monospace;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  padding-right: 2rem;
-  display: flex;
-  align-items: center;
-  color: var(--Primary-text-color);
-
-  /* End of Navbar */
-}
-
-/* Header section */
-.header {
-  width: 100%;
-  height: 100%;
-  padding-bottom: 8.55rem;
-  background: url("images/Header-desktop.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: -4.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.header1 {
-  margin-top: 22.5rem;
-  margin-left: rem;
-  width: 52.4rem;
-  height: 12rem;
-  font-family: "Inter", "Courier New", Courier, monospace;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 4rem;
-  line-height: 6.2rem;
-  text-align: center;
-  color: var(--Primary-text-color);
-}
-
-.header1::after {
-  /* margin-top: -5.5rem; */
-  content: "        I'm a software developer";
-  width: 35.4rem;
-  height: 12rem;
-  font-family: "Inter", "Courier New", Courier, monospace;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 4rem;
-  margin-left: rem;
-  text-align: center;
-  color: var(--buttons-color);
-  margin-bottom: 2rem;
-}
-
-.header-detail {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  width: 58%;
-  height: 164px;
-  font-family: "Inter", "Courier New", Courier, monospace;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 2.95rem;
-  text-align: center;
-  color: var(--Primary-text-color);
-}
-
-.social {
-  width: 15%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.Arrow {
-  margin-bottom: 0;
-  margin-top: 5.5rem;
-}
-
-/* End of Header section */
-
-/* Works section */
-
-.works {
-  height: auto;
-  display: grid;
-  grid-template-columns: 33%;
-  grid-template-rows: 200px 474px 474px 474px 474px 474px 474px 380px 352px 352px 352px;
-  grid-gap: 23px;
-  grid-template-areas:
-    "title"
-    "Work1 Work2 work3"
-    "Work4"
-    "Work5"
-    "Work6";
-}
-
-.title {
-  grid-area: title;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.works-title {
-  font-family: "Inter" "Courier New", Courier, monospace;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2.65rem;
-  line-height: 4rem;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: var(--Primary-text-color);
-  width: 80%;
-}
-
-.workp1 {
-  grid-area: Work1;
-  margin: auto;
-  display: flex;
-  align-items: flex-end;
-  width: 327px;
-  height: 100%;
-  background: var(--lighterG2);
-  border: 1px solid #d0d9d4;
-  border-radius: 8px;
-}
-
-.workp2 {
-  grid-area: Work2;
-  margin: auto;
-  display: flex;
-  align-items: flex-end;
-  width: 327px;
-  height: 100%;
-  background: var(--lighterG2);
-  border: 1px solid #d0d9d4;
-  border-radius: 8px;
-}
-
-.workp3 {
-  grid-area: Work3;
-  margin: auto;
-  display: flex;
-  align-items: flex-end;
-  width: 327px;
-  height: 100%;
-  background: var(--lighterG2);
-  border: 1px solid #d0d9d4;
-  border-radius: 8px;
-}
-
-.workp4 {
-  grid-area: Work4;
-  margin: auto;
-  display: flex;
-  align-items: flex-end;
-  width: 327px;
-  height: 100%;
-  background: var(--lighterG2);
-  border: 1px solid #d0d9d4;
-  border-radius: 8px;
-}
-
-.workp5 {
-  grid-area: Work5;
-  margin: auto;
-  display: flex;
-  align-items: flex-end;
-  width: 327px;
-  height: 100%;
-  background: var(--lighterG2);
-  border: 1px solid #d0d9d4;
-  border-radius: 8px;
-}
-
-.workp6 {
-  grid-area: Work6;
-  margin: auto;
-  display: flex;
-  align-items: flex-end;
-  width: 327px;
-  height: 100%;
-  background: var(--lighterG2);
-  border: 1px solid #d0d9d4;
-  border-radius: 8px;
-}
-
-.work-frame {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 50%;
-  background: var(--white);
-  border-radius: 8px;
-}
-
-.work-title {
-  width: 295px;
-  height: 57px;
-  font-family: "Inter" "Courier New", Courier, monospace;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.7rem;
-  line-height: 2rem;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: var(--Primary-text-color2);
-  margin-bottom: 2rem;
-}
-
-.lang-list-item {
-  list-style: none;
-  display: inline;
-  padding: 8px 10px;
-  text-align: center;
-  width: 100%;
-  height: 2rem;
-  background: var(--lighterG2);
-  border-radius: 4px;
-}
-
-.buttonW {
-  display: flex;
-  font-size: 1.1rem;
-  letter-spacing: 0.5px;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px;
-  gap: 5px;
-  position: relative;
-  width: 122px;
-  height: 48px;
-  background: var(--buttons-color);
-  color: var(--white);
-  border-radius: 4px;
-  margin-top: 2rem;
-}
-
-/* End of Works section */
-
-/* End of Desktop vsersion */
-
 /* Mobile Version */
 
 @media (max-width: 750px) {
@@ -332,30 +56,16 @@ button:active {
   }
 
   .Hamburger {
-    position: absolute;
+    position: relative;
     cursor: pointer;
     width: 18px;
-    height: 1.2rem;
+    height: 1.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    right: 36.612px;
-    top: 26px;
-    z-index: 20;
+    justify-content: space-around;
+    right: 15.612px;
+    top: 0;
   }
-=======
-.Hamburger {
-  position: absolute;
-  cursor: pointer;
-  width: 18px;
-  height: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  right: 36.612px;
-  top: 26px;
-}
->>>>>>> 64d2207974b835e8d45dbc1d5ffdca647daa1f2d
 
   .bar {
     display: block;
@@ -394,7 +104,7 @@ button:active {
     font-family: "Inter", "Courier New", Courier, monospace;
     font-style: normal;
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: 2rem;
     line-height: 1.95rem;
     text-align: left;
     color: #28352f;
@@ -412,7 +122,6 @@ button:active {
 
   .nav--link {
     font-family: "Inter", "Courier New", Courier, monospace;
-    font-style: normal;
     font-weight: 600;
     font-size: 32px;
     line-height: 44px;
@@ -439,14 +148,14 @@ button:active {
   }
 
   .header1 {
-    margin-top: 4.5rem;
-    width: 20.4rem;
-    height: 12rem;
+    margin-top: 9.5rem;
+    width: 27.4rem;
+    height: 30rem;
     font-family: "Inter", "Courier New", Courier, monospace;
     font-style: normal;
     font-weight: 700;
-    font-size: 2.7rem;
-    line-height: 3.2rem;
+    font-size: 4rem;
+    line-height: 5rem;
     text-align: center;
     color: var(--Primary-text-color);
   }
@@ -459,8 +168,8 @@ button:active {
     font-family: "Inter", "Courier New", Courier, monospace;
     font-style: normal;
     font-weight: 700;
-    font-size: 2.7rem;
-    line-height: 3.2rem;
+    font-size: 4rem;
+    line-height: 5rem;
     text-align: center;
     color: var(--buttons-color);
     margin-bottom: 2rem;
@@ -468,14 +177,15 @@ button:active {
 
   .header-detail {
     margin-top: 5rem;
-    margin-bottom: 5.5rem;
-    width: 22.29rem;
+    margin-bottom: 6.5rem;
+    width: 36rem;
     height: 164px;
     font-family: "Inter", "Courier New", Courier, monospace;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 1.95rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 0.9px;
     text-align: center;
     color: var(--Primary-text-color);
   }
@@ -490,7 +200,7 @@ button:active {
 
   .Arrow {
     margin-bottom: 0;
-    margin-top: 5.5rem;
+    margin-top: 7.5rem;
   }
 
   /* End of Header section */
@@ -524,8 +234,8 @@ button:active {
     font-family: "Inter" "Courier New", Courier, monospace;
     font-style: normal;
     font-weight: 700;
-    font-size: 2.65rem;
-    line-height: 4rem;
+    font-size: 4.1rem;
+    line-height: 6rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -535,13 +245,13 @@ button:active {
 
   .works-title::after {
     content: "";
-    width: 4.5rem;
-    height: 0.267rem;
+    width: 7rem;
+    height: 0.4rem;
     border-radius: 15%;
     background: var(--buttons-color);
     position: relative;
-    right: 11rem;
-    top: 5.5rem;
+    right: 15rem;
+    top: 7.5rem;
   }
 
   .workp1 {
@@ -633,8 +343,8 @@ button:active {
     font-family: "Inter" "Courier New", Courier, monospace;
     font-style: normal;
     font-weight: 600;
-    font-size: 1.7rem;
-    line-height: 2rem;
+    font-size: 2.4rem;
+    line-height: 3rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -642,25 +352,29 @@ button:active {
     margin-bottom: 2rem;
   }
 
+  .work-frame ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
   .lang-list-item {
     list-style: none;
     display: inline;
+    width: fit-content;
+    font-size: 1.2rem;
     padding: 8px 10px;
-    text-align: center;
-    width: 100%;
     height: 2rem;
     background: var(--lighterG2);
     border-radius: 4px;
   }
 
   .buttonW {
-    display: flex;
-    font-size: 1.1rem;
+    font-size: 1.7rem;
+    text-align: center;
     letter-spacing: 0.5px;
-    flex-direction: row;
-    align-items: center;
     padding: 10px;
-    gap: 5px;
     position: relative;
     width: 122px;
     height: 48px;
@@ -718,14 +432,14 @@ button:active {
   }
 
   .about-conatct-header {
-    margin-top: 3.5rem;
-    margin-bottom: 1.7rem;
-    width: 21rem;
+    margin-top: 4.5rem;
+    margin-bottom: 2.7rem;
+    width: 30rem;
     height: 12rem;
     font-family: "Inter", "Courier New", Courier, monospace;
     font-style: normal;
-    font-weight: 700;
-    font-size: 2.5rem;
+    font-weight: 600;
+    font-size: 4rem;
     line-height: 3.5rem;
     text-align: center;
     color: #172b4d;
@@ -733,14 +447,14 @@ button:active {
 
   .about-detail {
     margin-bottom: 0.5rem;
-    width: 23.5rem;
+    width: 36rem;
     height: auto;
     font-family: "Inter", "Courier New", Courier, monospace;
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 2rem;
     text-align: center;
-    letter-spacing: 1.65px;
-    line-height: 2rem;
+    letter-spacing: 0.5px;
+    line-height: 3rem;
     color: #42526e;
   }
 
@@ -749,10 +463,10 @@ button:active {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     padding: 2px;
     width: 159px;
-    height: 48px;
+    height: 50px;
     background: var(--buttons-color);
     border-radius: 4px;
     color: var(--white);
@@ -779,7 +493,7 @@ button:active {
     display: flex;
     font-family: "Inter", "Courier New", Courier, monospace;
     font-weight: 600;
-    font-size: 0.75rem;
+    font-size: 1.2rem;
     line-height: 1rem;
     letter-spacing: 0.03em;
     flex-flow: column wrap;
@@ -848,7 +562,7 @@ button:active {
     font-family: "Inter" "Courier New", Courier, monospace;
     font-style: normal;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     line-height: 32px;
     text-align: center;
     color: #344563;
@@ -871,18 +585,32 @@ button:active {
     background-position-y: bottom;
   }
 
+  .conatct-header {
+    margin-top: 4.5rem;
+    margin-bottom: 2.7rem;
+    width: 33rem;
+    height: 12rem;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 5.5rem;
+    text-align: center;
+    color: #172b4d;
+  }
+
   .contact-form {
     width: 80%;
     height: auto;
     display: flex;
     flex-flow: column;
-    margin-top: 14.5rem;
+    margin-top: 30.5rem;
     gap: 1rem;
   }
 
   .contact-form input {
     width: 90%;
-    height: 2.1rem;
+    height: 3.5rem;
     padding: 0.5rem 1rem;
     margin: 0.5rem;
     gap: 1.5rem;
@@ -890,14 +618,14 @@ button:active {
     border: 1px solid #d0d9d4;
     color: #111;
     font-family: "Inter", "Courier New", Courier, monospace;
-    font-size: 0.95rem;
+    font-size: 1.5rem;
     font-weight: 400;
     border-radius: 4px;
   }
 
   .contact-form textarea {
     width: 90%;
-    height: 6.1rem;
+    height: 9rem;
     padding: 1rem 1rem;
     margin: 0.25rem;
     gap: 1.5rem;
@@ -905,7 +633,7 @@ button:active {
     color: #000;
     border: 1px solid var(--buttons-color);
     font-family: "Inter", "Courier New", Courier, monospace;
-    font-size: 0.95rem;
+    font-size: 1.5rem;
     font-weight: 400;
     border-radius: 4px;
     outline-color: #008552;
@@ -913,26 +641,33 @@ button:active {
 
   .buttonC {
     margin: auto;
-    display: flex;
-    font-size: 1.1rem;
+    font-size: 1.7rem;
     letter-spacing: 0.5px;
-    flex-direction: row;
-    align-items: center;
     padding: 10px;
     gap: 5px;
     position: relative;
-    width: 126px;
+    width: 130px;
     height: 48px;
     background: var(--buttons-color);
     color: var(--white);
-    border-radius: 4px;
-    margin-top: 0.3rem;
+    border-radius: 6px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
   }
-
- 
 
   .below {
     margin-top: 3rem;
+  }
+
+  .address {
+    font-family: "Inter", 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 4rem;
+    text-align: center;
+    color: #42526e;
+    margin-top: 1.5rem;
   }
 
   /* End of Contact section */
