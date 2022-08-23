@@ -1,0 +1,564 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Common styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border - box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  font-family: "Inter", "Courier New", Courier, monospace;
+  font-weight: 400;
+}
+
+html {
+  font-size: 62.5%;
+
+  --white: #fff;
+  --buttons-color: #36b37f;
+  --Primary-text-color: #172b4d;
+  --Primary-text-color2: #3a4a42;
+  --lighterG1: #c5e9da;
+  --lighterG2: #ebf0ee;
+  --Pressed: #008552;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.main-wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+button:active {
+  background-color: var(--Pressed);
+}
+
+/* End of Common Styles */
+
+@media (max-width: 750px) {
+  /* Navbar */
+
+  .navbar {
+    display: flex;
+    width: 90%;
+    height: 2.75rem;
+    margin: 12px 19px;
+  }
+
+  .Hamburger {
+    position: absolute;
+    cursor: pointer;
+    width: 18px;
+    height: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    right: 36.612px;
+    top: 26px;
+  }
+
+  .bar {
+    display: block;
+    position: relative;
+    width: hug(16px);
+    height: 2px;
+    background-color: var(--Primary-text-color);
+  }
+
+  .HamburgerX {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    width: 18px;
+    height: 1.2rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    right: 36.612px;
+    top: 20px;
+
+    /* border: red solid 3px;  */
+  }
+
+  .barX {
+    display: none;
+    position: relative;
+    width: hug(16px);
+    height: 2px;
+    background-color: var(--Primary-text-color);
+  }
+
+  .welcome {
+    width: hug(5.625rem);
+    height: hug(2rem);
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.95rem;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #28352f;
+    margin-left: 1rem;
+  }
+
+  .Menu-items {
+    display: none;
+    position: absolute;
+    height: 100px;
+    width: 30%;
+    left: 20px;
+    top: 98px;
+  }
+
+  .nav--link {
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    padding-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    color: var(--Primary-text-color2);
+
+    /* End of Navbar */
+  }
+
+  /* Header section */
+  .header {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 8.55rem;
+    background: url("images/Mob-main.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header1 {
+    margin-top: 4.5rem;
+    width: 20.4rem;
+    height: 12rem;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.7rem;
+    line-height: 3.2rem;
+    text-align: center;
+    color: var(--Primary-text-color);
+  }
+
+  .header1::after {
+    /* margin-top: -5.5rem; */
+    content: "        I'm a software developer";
+    width: 20.4rem;
+    height: 12rem;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.7rem;
+    line-height: 3.2rem;
+    text-align: center;
+    color: var(--buttons-color);
+    margin-bottom: 2rem;
+  }
+
+  .header-detail {
+    margin-top: 5rem;
+    margin-bottom: 5.5rem;
+    width: 22.29rem;
+    height: 164px;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.95rem;
+    text-align: center;
+    color: var(--Primary-text-color);
+  }
+
+  .social {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Arrow {
+    margin-bottom: 0;
+    margin-top: 5.5rem;
+  }
+
+  /* End of Header section */
+
+  /* Works section */
+
+  .works {
+    height: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 474px 474px 474px 474px 474px 474px 380px 352px 352px 352px;
+    grid-gap: 23px;
+    grid-template-areas:
+      "title"
+      "Work1"
+      "Work2"
+      "Work3"
+      "Work4"
+      "Work5"
+      "Work6";
+  }
+
+  .title {
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .works-title {
+    font-family: "Inter" "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.65rem;
+    line-height: 4rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--Primary-text-color);
+    width: 80%;
+  }
+
+  .works-title::after {
+    content: "";
+    width: 4.5rem;
+    height: 0.267rem;
+    border-radius: 15%;
+    background: var(--buttons-color);
+    position: relative;
+    right: 11rem;
+    top: 5.5rem;
+  }
+
+  .workp1 {
+    grid-area: Work1;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    width: 327px;
+    height: 100%;
+    background: var(--lighterG2);
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+  }
+
+  .workp2 {
+    grid-area: Work2;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    width: 327px;
+    height: 100%;
+    background: var(--lighterG2);
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+  }
+
+  .workp3 {
+    grid-area: Work3;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    width: 327px;
+    height: 100%;
+    background: var(--lighterG2);
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+  }
+
+  .workp4 {
+    grid-area: Work4;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    width: 327px;
+    height: 100%;
+    background: var(--lighterG2);
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+  }
+
+  .workp5 {
+    grid-area: Work5;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    width: 327px;
+    height: 100%;
+    background: var(--lighterG2);
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+  }
+
+  .workp6 {
+    grid-area: Work6;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    width: 327px;
+    height: 100%;
+    background: var(--lighterG2);
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+  }
+
+  .work-frame {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    background: var(--white);
+    border-radius: 8px;
+  }
+
+  .work-title {
+    width: 295px;
+    height: 57px;
+    font-family: "Inter" "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--Primary-text-color2);
+    margin-bottom: 2rem;
+  }
+
+  .lang-list-item {
+    list-style: none;
+    display: inline;
+    padding: 8px 10px;
+    text-align: center;
+    width: 100%;
+    height: 2rem;
+    background: var(--lighterG2);
+    border-radius: 4px;
+  }
+
+  .buttonW {
+    display: flex;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+    position: relative;
+    width: 122px;
+    height: 48px;
+    background: var(--buttons-color);
+    color: var(--white);
+    border-radius: 4px;
+    margin-top: 2rem;
+  }
+
+  /* End of Works section */
+
+  /* About section */
+
+  .about-section {
+    height: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 420px 352px 352px 352px;
+    grid-gap: 23px;
+    grid-template-areas:
+      "about"
+      "languages"
+      "frameworks"
+      "skills";
+  }
+
+  .about {
+    grid-area: about;
+    width: 95%;
+    height: 100%;
+    background: url("images/aboutt1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: fill;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 8rem;
+  }
+
+  .about::after {
+    content: url("images/about3.png");
+    position: relative;
+    bottom: 20rem;
+    left: 14rem;
+    width: 55%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: fill;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 8rem;
+  }
+
+  .about-conatct-header {
+    margin-top: 3.5rem;
+    margin-bottom: 1.7rem;
+    width: 21rem;
+    height: 12rem;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    color: #172b4d;
+  }
+
+  .about-detail {
+    margin-bottom: 0.5rem;
+    width: 23.5rem;
+    height: auto;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-weight: 400;
+    font-size: 1.25rem;
+    text-align: center;
+    letter-spacing: 1.65px;
+    line-height: 2rem;
+    color: #42526e;
+  }
+
+  .buttonA {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 2px;
+    width: 159px;
+    height: 48px;
+    background: var(--buttons-color);
+    border-radius: 4px;
+    color: var(--white);
+    flex: none;
+    position: relative;
+    bottom: 14rem;
+    order: 2;
+  }
+
+  .llang {
+    display: flex;
+    flex-flow: row wrap;
+    line-height: 15px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+    width: 98%;
+  }
+
+  .llang-list-item {
+    list-style: none;
+    display: flex;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: 0.03em;
+    flex-flow: column wrap;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    padding: 8px 10px;
+    width: fit-content;
+    height: 2rem;
+    background: var(--white);
+    color: var(--buttons-color);
+    border-radius: 8px;
+  }
+
+  .languages {
+    grid-area: languages;
+    margin: auto;
+    width: 327px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    background: var(--lighterG2);
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+  }
+
+  .languages .llang {
+    margin-top: 2.2rem;
+    bottom: 3.5rem;
+  }
+
+  .frameworks {
+    grid-area: frameworks;
+    position: relative;
+    margin: auto;
+    width: 327px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    background: var(--lighterG2);
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+  }
+
+  .skills {
+    grid-area: skills;
+    margin: auto;
+    width: 327px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    background: var(--lighterG2);
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+  }
+
+  .about-label {
+    width: 337px;
+    height: 22px;
+    font-family: "Inter" "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 32px;
+    text-align: center;
+    color: #344563;
+  }
+
+  /* End of About section */
+}
