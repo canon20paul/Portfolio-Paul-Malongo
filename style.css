@@ -42,27 +42,17 @@ button:active {
 
 /* End of Common Styles */
 
-@media (max-width: 750px) {
-  /* Navbar */
-
-  .navbar {
-    display: flex;
-    width: 90%;
-    height: 2.75rem;
-    margin: 12px 19px;
-  }
-
-  .Hamburger {
-    position: absolute;
-    cursor: pointer;
-    width: 18px;
-    height: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    right: 36.612px;
-    top: 26px;
-  }
+.Hamburger {
+  position: absolute;
+  cursor: pointer;
+  width: 18px;
+  height: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  right: 36.612px;
+  top: 26px;
+}
 
   .bar {
     display: block;
