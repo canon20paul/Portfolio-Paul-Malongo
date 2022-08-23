@@ -3,7 +3,7 @@
 
 # Personal Portofolio Project
 
-> First Project Mearnt to demonstrate the understanding of developer tools
+> First Project Mearnt to demonstrate a Personal Portofolio
 ## Built With
 
 - Html
