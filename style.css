@@ -34,9 +34,6 @@ body {
   height: 100vh;
   overflow-x: hidden;
   margin-bottom: 8rem;
-  /* display: flex;
-  flex-flow: column;
-  align-items: center; */
 }
 
 footer {
@@ -73,7 +70,6 @@ button:active {
     width: 30%;
     left: 20px;
     top: 98px;
-    /* margin-right: 10rem; */
   }
 
   .nav--link {
@@ -174,12 +170,12 @@ button:active {
 
   .works {
     margin: auto;
-    width: 90%;
+    width: 80%;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 200px  352px 352px;
-    grid-gap: 23px;
+    row-gap: 3rem;
     grid-template-areas:
       "title       title         title"
       "Work1 Work2 Work3"
@@ -191,7 +187,7 @@ button:active {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items:flex-end;
+    align-items: flex-end;
   }
 
   .works-title {
@@ -329,13 +325,13 @@ button:active {
   }
 
   .about-section {
-    width: 96%;
+    width: 80%;
     margin: auto;
     height: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 320px 352px;
-    grid-gap: 23px;
+    row-gap: 3rem;
     grid-template-areas:
       "about about about"
       "languages frameworks skills";
@@ -343,11 +339,11 @@ button:active {
 
   .about {
     grid-area: about;
-    width: 105%;
+    width: 120%;
     height: auto;
     background: url("images/abt.png");
     background-repeat: no-repeat;
-    object-fit: contain;
+    object-fit: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
@@ -393,7 +389,7 @@ button:active {
     border-radius: 4px;
     color: var(--white);
     margin-top: 3rem;
-    }
+  }
 
   .llang {
     display: flex;
@@ -502,17 +498,17 @@ button:active {
     background: url("images/Contact.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x:center;
+    background-position-x: center;
     background-position-y: bottom;
     margin-bottom: 4rem;
     margin-top: 20rem;
- }
+  }
 
   .address {
     display: none;
   }
 
-    .conatct-header {
+  .conatct-header {
     width: 35%;
     height: 12rem;
     font-family: "Inter", "Courier New", Courier, monospace;
@@ -638,7 +634,6 @@ button:active {
     position: relative;
     top: -20%;
   }
-
 }
 
 @media (max-width: 900px) {
@@ -841,7 +836,7 @@ button:active {
     top: -2%;
   }
 
- .Arrow {
+  .Arrow {
     position: relative;
     top: 10%;
   }
@@ -1281,7 +1276,7 @@ button:active {
     margin-bottom: 2rem;
   }
 
-    .address {
+  .address {
     font-family: "Inter", "Courier New", Courier, monospace;
     font-style: normal;
     font-weight: 400;
