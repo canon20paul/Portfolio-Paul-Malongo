@@ -41,6 +41,7 @@ footer {
   height: fit-content;
   display: flex;
   flex-flow: column;
+  padding-bottom: 0.5rem;
 }
 
 button:active {
@@ -174,7 +175,7 @@ button:active {
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px  352px 352px;
+    grid-template-rows: 200px 352px 352px;
     row-gap: 3rem;
     grid-template-areas:
       "title       title         title"
@@ -590,7 +591,7 @@ button:active {
     height: auto;
     display: grid;
     grid-template-columns: 30% 1fr;
-    grid-template-rows: 200px  352px 352px 352px;
+    grid-template-rows: 200px 352px 352px 352px;
     grid-gap: 23px;
     grid-template-areas:
       "title            title"
@@ -1289,3 +1290,5 @@ button:active {
 
   /* End of Contact section */
 }
+
+/* ANIMATION SELECTORS */
