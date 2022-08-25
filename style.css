@@ -36,15 +36,652 @@ body {
   margin-bottom: 8rem;
 }
 
+footer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-flow: column;
+  padding-bottom: 0.5rem;
+}
+
 button:active {
   background-color: var(--Pressed);
 }
 
 /* End of Common Styles */
 
+/* Desktop version */
+@media (min-width: 500px) {
+  .navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 100%;
+    height: 2.75rem;
+    padding-top: 2rem;
+  }
+
+  .welcome {
+    display: none;
+  }
+
+  .Menu-items {
+    display: flex;
+    height: 100px;
+    width: 30%;
+    left: 20px;
+    top: 98px;
+  }
+
+  .nav--link {
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    align-items: center;
+    color: var(--Primary-text-color);
+
+    /* End of Navbar */
+  }
+
+  /* Header section */
+  .header {
+    width: 100%;
+    height: 150%;
+    background: url("images/Header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    margin-top: -4.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+  }
+
+  .header1 {
+    margin-top: 25.5rem;
+    margin-left: rem;
+    width: 52.4rem;
+    height: 12rem;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 6.2rem;
+    text-align: center;
+    color: var(--Primary-text-color);
+  }
+
+  .header1::after {
+    /* margin-top: -5.5rem; */
+    content: "        I'm a software developer";
+    width: 35.4rem;
+    height: 12rem;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 4rem;
+    margin-left: rem;
+    text-align: center;
+    color: var(--buttons-color);
+    margin-bottom: 2rem;
+  }
+
+  .header-detail {
+    margin-top: 2rem;
+    width: 52%;
+    height: 164px;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.95rem;
+    text-align: center;
+    color: var(--Primary-text-color);
+  }
+
+  .social {
+    position: relative;
+    top: -20%;
+    width: 15%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social image {
+    font-size: 2rem;
+  }
+
+  .Arrow {
+    position: relative;
+    top: -30rem;
+    margin-bottom: 0;
+    margin-top: 5.5rem;
+  }
+
+  /* End of Header section */
+
+  /* Works section */
+
+  .works {
+    margin: auto;
+    width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 352px 352px;
+    row-gap: 3rem;
+    grid-template-areas:
+      "title       title         title"
+      "Work1 Work2 Work3"
+      "Work4 Work5 Work6";
+  }
+
+  .title {
+    grid-area: title;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .works-title {
+    font-family: Inter "Courier New", Courier, monospace;
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 7rem;
+    color: var(--Primary-text-color);
+    width: fit-content;
+  }
+
+  .workp1 {
+    grid-area: Work1;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    width: 327px;
+    height: 100%;
+    background: var(--lighterG2);
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+  }
+
+  .workp2 {
+    grid-area: Work2;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    width: 327px;
+    height: 100%;
+    background: var(--lighterG2);
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+  }
+
+  .workp3 {
+    grid-area: Work3;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    width: 327px;
+    height: 100%;
+    background: var(--lighterG2);
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+  }
+
+  .workp4 {
+    grid-area: Work4;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    width: 327px;
+    height: 100%;
+    background: var(--lighterG2);
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+  }
+
+  .workp5 {
+    grid-area: Work5;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    width: 327px;
+    height: 100%;
+    background: var(--lighterG2);
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+  }
+
+  .workp6 {
+    grid-area: Work6;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    width: 327px;
+    height: 100%;
+    background: var(--lighterG2);
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+  }
+
+  .work-frame {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    background: var(--white);
+    border-radius: 8px;
+  }
+
+  .work-title {
+    width: 295px;
+    height: 57px;
+    font-family: "Inter" "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.7rem;
+    line-height: 3rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--Primary-text-color2);
+    margin-bottom: 2rem;
+  }
+
+  .lang-list-item {
+    list-style: none;
+    display: inline;
+    padding: 8px 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 1.2rem;
+    background: var(--lighterG2);
+    border-radius: 4px;
+  }
+
+  .buttonW {
+    display: flex;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 122px;
+    height: 48px;
+    background: var(--buttons-color);
+    color: var(--white);
+    border-radius: 4px;
+    margin-top: 2rem;
+  }
+
+  .about-section {
+    width: 80%;
+    margin: auto;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 320px 352px;
+    row-gap: 3rem;
+    grid-template-areas:
+      "about about about"
+      "languages frameworks skills";
+  }
+
+  .about {
+    grid-area: about;
+    width: 120%;
+    height: auto;
+    background: url("images/abt.png");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-contact-header {
+    margin-top: 4.5rem;
+    width: 30rem;
+    height: 12rem;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 3.5rem;
+    text-align: center;
+    color: #172b4d;
+  }
+
+  .about-detail {
+    margin-bottom: 0.5rem;
+    width: 60%;
+    height: auto;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 3rem;
+    color: #42526e;
+  }
+
+  .buttonA {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    padding: 2px;
+    width: 160px;
+    height: 70px;
+    background: var(--buttons-color);
+    border-radius: 4px;
+    color: var(--white);
+    margin-top: 3rem;
+  }
+
+  .llang {
+    display: flex;
+    flex-flow: row wrap;
+    line-height: 15px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+    width: 98%;
+  }
+
+  .llang-list-item {
+    list-style: none;
+    display: flex;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1rem;
+    letter-spacing: 0.03em;
+    flex-flow: column wrap;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    padding: 8px 10px;
+    width: fit-content;
+    height: 2rem;
+    background: var(--white);
+    color: var(--buttons-color);
+    border-radius: 8px;
+  }
+
+  .languages {
+    grid-area: languages;
+    margin: auto;
+    width: 327px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    background: var(--lighterG2);
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+  }
+
+  .languages .llang {
+    margin-top: 2.2rem;
+    bottom: 3.5rem;
+  }
+
+  .frameworks {
+    grid-area: frameworks;
+    position: relative;
+    margin: auto;
+    width: 327px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    background: var(--lighterG2);
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+  }
+
+  .skills {
+    grid-area: skills;
+    margin: auto;
+    width: 327px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    background: var(--lighterG2);
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+  }
+
+  .about-label {
+    width: 337px;
+    height: 22px;
+    font-family: "Inter" "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 32px;
+    text-align: center;
+    color: #344563;
+  }
+
+  /* End of Works section */
+
+  /* Contact section */
+
+  .contact-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    column-gap: 3rem;
+    height: 70%;
+    background: url("images/Contact.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: bottom;
+    margin-bottom: 4rem;
+    margin-top: 20rem;
+  }
+
+  .address {
+    display: none;
+  }
+
+  .conatct-header {
+    width: 35%;
+    height: 12rem;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 4.5rem;
+    text-align: justify;
+    color: #172b4d;
+  }
+
+  .contact-form {
+    width: 55%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    z-index: 20;
+    margin-bottom: 4rem;
+  }
+
+  .contact-form input {
+    width: 90%;
+    height: 3.5rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    gap: 1.5rem;
+    background: #fff;
+    border: 1px solid #d0d9d4;
+    color: #111;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-size: 1.5rem;
+    font-weight: 400;
+    border-radius: 4px;
+  }
+
+  .contact-form textarea {
+    width: 90%;
+    height: 9rem;
+    padding: 1rem 1rem;
+    margin: 0.25rem;
+    gap: 1.5rem;
+    background: #fff;
+    color: #000;
+    border: 1px solid var(--buttons-color);
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-size: 1.5rem;
+    font-weight: 400;
+    border-radius: 4px;
+    outline-color: #008552;
+  }
+
+  .buttonC {
+    font-size: 1.7rem;
+    letter-spacing: 0.5px;
+    padding: 10px;
+    gap: 5px;
+    position: relative;
+    width: 130px;
+    height: 48px;
+    background: var(--buttons-color);
+    color: var(--white);
+    border-radius: 6px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  /* End of Contact section */
+
+  /* End of Desktop vsersion */
+}
+
 /* Mobile Version */
 
-@media (max-width: 750px) {
+@media (max-width: 1200px) {
+  .works {
+    margin: auto;
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 200px 352px 352px 352px;
+    grid-gap: 23px;
+    grid-template-areas:
+      "title            title"
+      "Work1 Work2"
+      "Work3 Work4"
+      "Work5 Work6";
+  }
+
+  .about-section {
+    height: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 420px 352px 352px;
+    grid-gap: 23px;
+    grid-template-areas:
+      "about about"
+      "languages frameworks"
+      "skills skill ";
+  }
+
+  .conatct-header {
+    margin: auto;
+    margin-top: 0;
+    width: 35%;
+    height: 12rem;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 4.5rem;
+    text-align: center;
+    color: #172b4d;
+  }
+
+  .social {
+    position: relative;
+    top: -10%;
+  }
+
+  .Arrow {
+    position: relative;
+    top: -20%;
+  }
+}
+
+@media (max-width: 900px) {
+  .works {
+    height: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 474px 474px 474px 474px 474px 474px;
+    grid-gap: 23px;
+    grid-template-areas:
+      "title"
+      "Work1"
+      "Work2"
+      "Work3"
+      "Work4"
+      "Work5"
+      "Work6";
+  }
+
+  .about-section {
+    height: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 420px 352px 352px 352px;
+    grid-gap: 23px;
+    grid-template-areas:
+      "about"
+      "languages"
+      "frameworks"
+      "skills";
+  }
+
+  .conatct-header {
+    margin-top: 0;
+    width: 35%;
+    height: 12rem;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    color: #172b4d;
+  }
+}
+
+@media (max-width: 550px) {
   /* Navbar */
 
   .navbar {
@@ -196,11 +833,13 @@ button:active {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    top: -2%;
   }
 
   .Arrow {
-    margin-bottom: 0;
-    margin-top: 7.5rem;
+    position: relative;
+    top: 10%;
   }
 
   /* End of Header section */
@@ -211,7 +850,7 @@ button:active {
     height: auto;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 200px 474px 474px 474px 474px 474px 474px 380px 352px 352px 352px;
+    grid-template-rows: 200px 474px 474px 474px 474px 474px 474px;
     grid-gap: 23px;
     grid-template-areas:
       "title"
@@ -392,7 +1031,7 @@ button:active {
     height: auto;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 420px 352px 352px 352px;
+    grid-template-rows: 350px 352px 352px 352px;
     grid-gap: 23px;
     grid-template-areas:
       "about"
@@ -405,7 +1044,7 @@ button:active {
     grid-area: about;
     width: 95%;
     height: 100%;
-    background: url("images/aboutt1.png");
+    background: url("images/abt.png");
     background-repeat: no-repeat;
     background-size: contain;
     object-fit: fill;
@@ -415,25 +1054,8 @@ button:active {
     padding-bottom: 8rem;
   }
 
-  .about::after {
-    content: url("images/about3.png");
-    position: relative;
-    bottom: 20rem;
-    left: 50%;
-    width: 55%;
-    height: 50%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    object-fit: fill;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 8rem;
-  }
-
-  .about-conatct-header {
+  .about-contact-header {
     margin-top: 4.5rem;
-    margin-bottom: 2.7rem;
     width: 30rem;
     height: 12rem;
     font-family: "Inter", "Courier New", Courier, monospace;
@@ -472,7 +1094,7 @@ button:active {
     color: var(--white);
     flex: none;
     position: relative;
-    bottom: 14rem;
+    bottom: 0;
     order: 2;
   }
 
@@ -655,12 +1277,8 @@ button:active {
     margin-bottom: 2rem;
   }
 
-  .below {
-    margin-top: 3rem;
-  }
-
   .address {
-    font-family: "Inter", 'Courier New', Courier, monospace;
+    font-family: "Inter", "Courier New", Courier, monospace;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -672,3 +1290,5 @@ button:active {
 
   /* End of Contact section */
 }
+
+/* ANIMATION SELECTORS */
