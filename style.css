@@ -1292,8 +1292,8 @@ button:active {
 }
 
 /* ANIMATION SELECTORS */
-Menu-items a {
-  transition: color 0.7s;
+.Menu-items a {
+  transition: color 1s;
 }
 
 .work-card {
@@ -1313,7 +1313,7 @@ Menu-items a {
 }
 
 .asset-card:hover {
-  transform: rotateY(40deg) skewX(-2deg) translateY((-3rem));
+  transform: rotateY(40deg) skewX(-20deg) translateY((-3rem));
   box-shadow: 2rem 2rem 2rem var(--Primary-text-color2);
   border-radius: 20%;
 }
