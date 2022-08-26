@@ -1292,3 +1292,58 @@ button:active {
 }
 
 /* ANIMATION SELECTORS */
+Menu-items a {
+  transition: color 0.7s;
+}
+
+.work-card {
+  transform: rotateY(05deg) skewX(-2deg);
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.work-card:hover {
+  transform: rotateY(40deg) skewX(-2deg) translateY((-3rem));
+  box-shadow: 2rem 2rem 2rem var(--buttons-color);
+  border-radius: 20%;
+}
+
+.asset-card {
+  transform: rotateY(05deg) skewX(-2deg);
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.asset-card:hover {
+  transform: rotateY(40deg) skewX(-2deg) translateY((-3rem));
+  box-shadow: 2rem 2rem 2rem var(--Primary-text-color2);
+  border-radius: 20%;
+}
+
+.social a {
+  transform: rotateY(0deg);
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.social a:hover {
+  transform: rotateY(90deg) skewX(-2deg) translate((-30rem));
+  box-shadow: 1rem 2rem 1rem var(--Primary-text-color2);
+  border: #111 solid 5px;
+  border-radius: 50%;
+}
+
+.social a img:hover {
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(359deg);
+  }
+}
+
+.Menu-items a:hover {
+  color: var(--buttons-color);
+}
