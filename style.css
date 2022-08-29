@@ -671,14 +671,21 @@ button:active {
   .about-section {
     height: auto;
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 420px 352px 352px 352px;
+    grid-template-columns: 110%;
+    grid-template-rows: 480px 352px 352px 352px;
     grid-gap: 23px;
     grid-template-areas:
       "about"
       "languages"
       "frameworks"
       "skills";
+  }
+
+  .about {
+    grid-area: about;
+    width: 100%;
+    margin: auto;
+    margin-left: %;
   }
 
   .conatct-header {
@@ -861,6 +868,7 @@ button:active {
   /* Works section */
 
   .works {
+    margin: auto;
     height: auto;
     display: grid;
     grid-template-columns: 100%;
