@@ -340,7 +340,8 @@ button:active {
 
   .about {
     grid-area: about;
-    width: 120%;
+    width: 125%;
+    margin-left: -14rem;
     height: auto;
     background: url("images/abt.png");
     background-repeat: no-repeat;
@@ -610,6 +611,21 @@ button:active {
       "about about"
       "languages frameworks"
       "skills skill ";
+  }
+
+  .about {
+    grid-area: about;
+    width: 125%;
+    margin-left: -14rem;
+    height: auto;
+    background: url("images/abt.png");
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    object-fit: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .conatct-header {
@@ -1043,6 +1059,7 @@ button:active {
   .about {
     grid-area: about;
     width: 95%;
+    margin: auto;
     height: 100%;
     background: url("images/abt.png");
     background-repeat: no-repeat;
@@ -1292,12 +1309,12 @@ button:active {
 }
 
 /* ANIMATION SELECTORS */
-Menu-items a {
-  transition: color 0.7s;
+.Menu-items a {
+  transition: color 1s;
 }
 
 .work-card {
-  transform: rotateY(05deg) skewX(-2deg);
+  transform: rotateY(05deg) skewX(-0deg);
   transition: transform 0.5s, box-shadow 0.5s;
 }
 
@@ -1308,12 +1325,12 @@ Menu-items a {
 }
 
 .asset-card {
-  transform: rotateY(05deg) skewX(-2deg);
+  transform: rotateY(05deg) skewX(-0deg);
   transition: transform 0.5s, box-shadow 0.5s;
 }
 
 .asset-card:hover {
-  transform: rotateY(40deg) skewX(-2deg) translateY((-3rem));
+  transform: rotateY(40deg) skewX(-20deg) translateY((-3rem));
   box-shadow: 2rem 2rem 2rem var(--Primary-text-color2);
   border-radius: 20%;
 }
