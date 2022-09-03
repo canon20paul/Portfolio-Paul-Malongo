@@ -734,15 +734,18 @@ button:active {
 
   .Hamburger.active .bar:nth-child(1) {
     transform: translateY(5px) rotate(45deg);
+    background: #93a79d;
   }
 
   .Hamburger.active .bar:nth-child(3) {
     transform: translateY(-5px) rotate(-45deg);
+    background: #93a79d;
   }
 
   .Menu-items.active {
     display: block;
     width: 100%;
+    z-index: 50;
   }
 
   .HamburgerX {
@@ -790,8 +793,7 @@ button:active {
     top: 8;
     background-color: #fff;
     background-position: center;
-    border: red solid 3px;
-    margin-top: 2rem;
+    margin-top: 5%;
   }
 
   .nav--link {
@@ -799,12 +801,12 @@ button:active {
     font-weight: 600;
     font-size: 32px;
     line-height: 44px;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     display: flex;
     align-items: center;
     color: var(--Primary-text-color2);
     background-color: #fff;
-    padding-left: 2rem;
+    padding-left: 2.5rem;
 
     /* End of Navbar */
   }
