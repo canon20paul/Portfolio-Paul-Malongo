@@ -117,9 +117,9 @@ projectsC.innerHTML = workCard;
 function popUpDiv(j) {
     const wrap = document.createElement('section');
     const wrap1 = document.createElement('div');
-    var cancel='images/cancel.png';
+    let cancel = () => { if (window.innerWidth < 550) { cancel = 'images/Enable.png'; } else { cancel = 'images/cancel.png'; } };
 
-    window.addEventListener('resize', ( ) => { if (window.innerWidth < 550) { cancel='images/Enable.png'; } return cancel; });
+    // window.onresize = ( ) => { if (window.innerWidth < 550) { cancel='images/Enable.png'; } return cancel; };
     wrap.classList.add('wrap');
     wrap1.classList.add('wrap1');
     wrap1.innerHTML = ` <section class="wrap"><div class="wrap1">
