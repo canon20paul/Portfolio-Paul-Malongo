@@ -85,11 +85,11 @@ const languageHtml2 = (workObj, key, langList = '') => {
   return langList;
 };
 
-let workCard = '';
+let workCard = ' ';
 
 const appendWorks = (works) => {
   for (let i = 0; i < works.length; i += 1) {
-    workCard + = ` <div class="workp${i+1} work-card">
+    workCard += ` <div class="workp${i+1} work-card">
         <img class="Wimage" src="${works[i].featured_image}" alt="${works[i].title}" />
         <div class="work-frame">
         <h3 class="work-title">${works[i].title}</h3>
@@ -100,7 +100,7 @@ const appendWorks = (works) => {
     See Project
     </button>
     </div>
-    </div>`;
+    </div> `;
   }
 };
 appendWorks(works);
