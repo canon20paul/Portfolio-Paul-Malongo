@@ -71,7 +71,7 @@ const works = [
 const languageHtml = (workObj, key, langList = '') => {
   /* eslint-disable no-restricted-syntax */
   for (const lang in workObj[key].lang_list) {
-    if (lang < 4 ) { langList += ` <li class="lang-list-item">${workObj[key].lang_list[lang]}</li> `; }
+    if (lang < 4 ) { langList += `<li class="lang-list-item">${workObj[key].lang_list[lang]}</li> `; }
   }
   /* eslint-enable no-restricted-syntax */
   return langList;
@@ -80,18 +80,18 @@ const languageHtml = (workObj, key, langList = '') => {
 const languageHtml2 = (workObj, key, langList = '') => {
   /* eslint-disable no-restricted-syntax */
   for (const lang in workObj[key].lang_list) {
-    if (lang ) { langList += ` <li class="lang-list-item">${workObj[key].lang_list[lang]}</li> `; }
+    if (lang ) { langList += `<li class="lang-list-item">${workObj[key].lang_list[lang]}</li> `; }
   }
   /* eslint-enable no-restricted-syntax */
   return langList;
 };
 
-let workCard = ' ';
+let workCard = '';
 
 const appendWorks = (works) => {
   for (let i = 0; i < works.length; i += 1) {
     // eslint-disable-next-line no-unused-vars
-    workCard += `<div class="workp${i+1} work-card">
+    workCard + = `<div class="workp${i+1} work-card">
         <img class="Wimage" src="${works[i].featured_image}" alt="${works[i].title}" />
         <div class="work-frame">
         <h3 class="work-title">${works[i].title}</h3>
