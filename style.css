@@ -1359,6 +1359,12 @@ button:active {
   /* End of Contact section */
 }
 
+.error {
+  color: #f00;
+  font-size: 1rem;
+  margin-top: 1px;
+}
+
 /* ANIMATION SELECTORS */
 .Menu-items a {
   transition: color 1s;
