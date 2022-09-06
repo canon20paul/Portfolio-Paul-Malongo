@@ -123,7 +123,7 @@ function popUpDiv(j) {
     wrap.classList.add('wrap');
     wrap1.classList.add('wrap1');
     wrap1.innerHTML = ` <section class="wrap"><div class="wrap1">
-  <div class="xx"><img class="xx-img" src="${cancel}" alt="Close" onclick="removeBlur()" /></div>
+  <div class="xx"><input type="submit" value="" class="xx-img"  onclick="removeBlur()" /></div>
   <div class="wrap1-img"><img class="wrap1-img-img" src="${works[j].featured_image}" alt="${works[j].title}" /></div>
   <div id="wrap-header" class="wrap-header"><h3>${works[j].title}</h3></div>
   <div class="wrap-bottom">
