@@ -80,7 +80,8 @@ const languageHtml = (workObj, key, langList = '') => {
 const languageHtml2 = (workObj, key, langList = '') => {
   /* eslint-disable no-restricted-syntax */
   for (const lang in workObj[key].lang_list) {
-    if (lang ) { langList+=`<li class="lang-list-item">${workObj[key].lang_list[lang]}</li> `; }
+    if (lang ) { langList+=`<li class="lang-list-item">${workObj[key].lang_list[lang]}</li> `;
+}
 }
   /* eslint-enable no-restricted-syntax */
   return langList;
