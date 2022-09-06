@@ -60,6 +60,7 @@ button:active {
     width: 100%;
     height: 2.75rem;
     padding-top: 2rem;
+    transition: 1s;
   }
 
   .welcome {
@@ -101,6 +102,7 @@ button:active {
     flex-direction: column;
     align-items: center;
     z-index: 0;
+    transition: 1s;
   }
 
   .header1 {
@@ -115,6 +117,7 @@ button:active {
     line-height: 6.2rem;
     text-align: center;
     color: var(--Primary-text-color);
+    transition: 1s;
   }
 
   .header1::after {
@@ -130,6 +133,7 @@ button:active {
     text-align: center;
     color: var(--buttons-color);
     margin-bottom: 2rem;
+    transition: 1s;
   }
 
   .header-detail {
@@ -143,6 +147,7 @@ button:active {
     line-height: 2.95rem;
     text-align: center;
     color: var(--Primary-text-color);
+    transition: 1s;
   }
 
   .social {
@@ -153,6 +158,7 @@ button:active {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 1s;
   }
 
   .social image {
@@ -164,6 +170,7 @@ button:active {
     top: -30rem;
     margin-bottom: 0;
     margin-top: 5.5rem;
+    transition: 1s;
   }
 
   /* End of Header section */
@@ -182,6 +189,7 @@ button:active {
       "title       title         title"
       "Work1 Work2 Work3"
       "Work4 Work5 Work6";
+    transition: 1s;
   }
 
   .title {
@@ -337,6 +345,7 @@ button:active {
     grid-template-areas:
       "about about about"
       "languages frameworks skills";
+    transition: 1s;
   }
 
   .about {
@@ -600,6 +609,7 @@ button:active {
       "Work1 Work2"
       "Work3 Work4"
       "Work5 Work6";
+    transition: 1s;
   }
 
   .about-section {
@@ -612,6 +622,7 @@ button:active {
       "about about"
       "languages frameworks"
       "skills skill ";
+    transition: 1s;
   }
 
   .about {
@@ -627,6 +638,7 @@ button:active {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: 1s;
   }
 
   .conatct-header {
@@ -646,6 +658,7 @@ button:active {
   .social {
     position: relative;
     top: -10%;
+    transition: 1s;
   }
 
   .Arrow {
@@ -669,6 +682,7 @@ button:active {
       "Work4"
       "Work5"
       "Work6";
+    transition: 1s;
   }
 
   .about-section {
@@ -682,6 +696,7 @@ button:active {
       "languages"
       "frameworks"
       "skills";
+    transition: 1s;
   }
 
   .conatct-header {
@@ -727,6 +742,7 @@ button:active {
     width: hug(16px);
     height: 2px;
     background-color: var(--Primary-text-color);
+    transition: 1s;
   }
 
   .Hamburger.active .bar:nth-child(2) {
@@ -747,6 +763,7 @@ button:active {
     display: block;
     width: 100%;
     z-index: 50;
+    transition: 1s;
   }
 
   .HamburgerX {
@@ -783,6 +800,7 @@ button:active {
     text-align: left;
     color: #28352f;
     margin-left: 1rem;
+    transition: 1s;
   }
 
   .Menu-items {
@@ -795,6 +813,7 @@ button:active {
     background-color: #fff;
     background-position: center;
     margin-top: 5%;
+    transition: 1s;
   }
 
   .nav--link {
@@ -808,6 +827,7 @@ button:active {
     color: var(--Primary-text-color2);
     background-color: #fff;
     padding-left: 2.5rem;
+    transition: 1s;
 
     /* End of Navbar */
   }
@@ -837,6 +857,7 @@ button:active {
     line-height: 5rem;
     text-align: center;
     color: var(--Primary-text-color);
+    transition: 1s;
   }
 
   .header1::after {
@@ -852,6 +873,7 @@ button:active {
     text-align: center;
     color: var(--buttons-color);
     margin-bottom: 2rem;
+    transition: 1s;
   }
 
   .header-detail {
@@ -867,6 +889,7 @@ button:active {
     letter-spacing: 0.9px;
     text-align: center;
     color: var(--Primary-text-color);
+    transition: 1s;
   }
 
   .social {
@@ -1389,4 +1412,8 @@ button:active {
 
 .Menu-items a:hover {
   color: var(--buttons-color);
+}
+
+.bar:hover {
+  background-color: var(--buttons-color);
 }
