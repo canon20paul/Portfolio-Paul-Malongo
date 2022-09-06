@@ -24,7 +24,7 @@ const works = [
     title: 'Multi-post Stories3 Gain+Glory',
     description:
             'A daily selection of privately Personalized reads; no accounts or Signups required, has been the industry" s standard dummy text eveer since the 1500s, when an unknown Printer took a standard dummy text.',
-detail: "Lore   Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
+    detail: "Lore   Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
     featured_image: 'images/5G.png',
     lang_list: ['css', 'html', 'bootsrap', 'Ruby', 'Github', 'Codekit', 'Codepen'],
     source: 'https://github.com/canon20paul/My-Portfolio-setup-Desktop-version',
@@ -34,15 +34,15 @@ detail: "Lore   Ipsum is simply dummy text of the printing and typesetting indus
     title: 'Multi-post Stories4 Gain+Glory',
     description:
             'A daily selection of privately Personalized reads; no accounts or Signups required, has been the industry" s standard dummy text eveer since the 1500s, when an unknown Printer took a standard dummy text.',
-detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
+    detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
     featured_image: 'images/5G.png',
     lang_list: ['css', 'html', 'bootsrap', 'Ruby', 'Github', 'Codekit', 'Codepen'],
     source: 'https://github.com/canon20paul/My-Portfolio-setup-Desktop-version',
     live_demo: 'https://canon20paul.github.io/My-Portfolio-setup-Desktop-version/',
   },
   {
-        title: 'Multi-post Stories5 Gain+Glory',
-        description:
+    title: 'Multi-post Stories5 Gain+Glory',
+    description:
             'A daily selection of privately Personalized reads; no accounts or Signups required, has been the industry" s standard dummy text eveer since the 1500s, when an unknown Printer took a standard dummy text.',
     detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
     featured_image: 'images/5G.png',
@@ -59,7 +59,7 @@ detail: "Lorem Ipsum is simply dummy text of the printing and typesetting indust
     lang_list: ['css', 'html', 'bootsrap', 'Ruby', 'Github', 'Codekit', 'Codepen'],
     source: 'https://github.com/canon20paul/My-Portfolio-setup-Desktop-version',
     live_demo: 'https://canon20paul.github.io/My-Portfolio-setup-Desktop-version/',
-    },
+  },
 ];
 
 // const workCardShouldReverse = (index) => {
@@ -71,7 +71,7 @@ detail: "Lorem Ipsum is simply dummy text of the printing and typesetting indust
 const languageHtml = (workObj, key, langList = '') => {
   /* eslint-disable no-restricted-syntax */
   for (const lang in workObj[key].lang_list) {
-        if (lang < 4 ) {langList += `<li class="lang-list-item">${workObj[key].lang_list[lang]}</li>`;}
+    if (lang < 4 ){ langList += `<li class="lang-list-item">${workObj[key].lang_list[lang]}</li>`; }
   }
   /* eslint-enable no-restricted-syntax */
   return langList;
@@ -80,7 +80,7 @@ const languageHtml = (workObj, key, langList = '') => {
 const languageHtml2 = (workObj, key, langList = '') => {
   /* eslint-disable no-restricted-syntax */
   for (const lang in workObj[key].lang_list) {
-    if (lang ) {langList += `<li class="lang-list-item">${workObj[key].lang_list[lang]}</li>`;}
+    if (lang ){ langList += `<li class="lang-list-item">${workObj[key].lang_list[lang]}</li>`; }
   }
   /* eslint-enable no-restricted-syntax */
   return langList;
@@ -90,7 +90,8 @@ let workCard = ' ';
 
 const appendWorks = (works) => {
   for (let i = 0; i < works.length; i += 1) {
-    workCard += ` <div class="workp${i+1} work-card">
+    // eslint-disable-next-line no-unused-vars
+    workCard + =  ` <div class="workp${i+1} work-card">
         <img class="Wimage" src="${works[i].featured_image}" alt="${works[i].title}" />
         <div class="work-frame">
         <h3 class="work-title">${works[i].title}</h3>
@@ -106,7 +107,6 @@ const appendWorks = (works) => {
 };
 appendWorks(works);
 projectsC.innerHTML = workCard;
-//modal functionality
 // eslint-disable-next-line no-unused-vars
 function popUpDiv(j) {
   const wrap = document.createElement('section');
