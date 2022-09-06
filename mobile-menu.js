@@ -23,8 +23,5 @@ document.querySelectorAll('.nav--link').forEach((n) => n.addEventListener('click
   navmenu.classList.remove('active');
   document.body.style.overflow = 'auto';
   document.getElementById('welcome').style.opacity = 1;
-<<<<<<< HEAD
   
-=======
->>>>>>> a2c71857c502da8b7b16b98d15666c9eea75ea1c
 }));
