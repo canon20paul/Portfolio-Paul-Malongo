@@ -734,6 +734,7 @@ button:active {
     justify-content: space-around;
     right: 15.612px;
     top: 0;
+    transition: 1s;
   }
 
   .bar {
@@ -935,6 +936,7 @@ button:active {
   }
 
   .works-title {
+    border: 5px solid rgb(245, 185, 57);
     font-family: "Inter" "Courier New", Courier, monospace;
     font-style: normal;
     font-weight: 700;
@@ -944,7 +946,7 @@ button:active {
     align-items: center;
     text-align: center;
     color: var(--Primary-text-color);
-    width: 80%;
+    width: 100%;
   }
 
   .works-title::after {
@@ -954,6 +956,7 @@ button:active {
     border-radius: 15%;
     background: var(--buttons-color);
     position: relative;
+    margin-top: 10%;
     right: 15rem;
     top: 7.5rem;
   }
