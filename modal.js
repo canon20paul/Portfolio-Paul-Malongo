@@ -5,7 +5,7 @@ const works = [
         description:
             'A daily selection of privately Personalized reads; no accounts or Signups required, has been the industry" s standard dummy text eveer since the 1500s, when an unknown Printer took a standard dummy text.',
         detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
-        featured_image: 'images/modal.png',
+        featured_image: 'images/5G.png',
         lang_list: ['css', 'html', 'bootsrap', 'Ruby', 'Github', 'Codekit', 'Codepen'],
         source: 'https://github.com/canon20paul/My-Portfolio-setup-Desktop-version',
         live_demo: 'https://canon20paul.github.io/My-Portfolio-setup-Desktop-version/',
@@ -25,7 +25,7 @@ const works = [
         description:
             'A daily selection of privately Personalized reads; no accounts or Signups required, has been the industry" s standard dummy text eveer since the 1500s, when an unknown Printer took a standard dummy text.',
         detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
-        featured_image: 'images/modal.png',
+        featured_image: 'images/5G.png',
         lang_list: ['css', 'html', 'bootsrap', 'Ruby', 'Github', 'Codekit', 'Codepen'],
         source: 'https://github.com/canon20paul/My-Portfolio-setup-Desktop-version',
         live_demo: 'https://canon20paul.github.io/My-Portfolio-setup-Desktop-version/',
@@ -35,7 +35,7 @@ const works = [
         description:
             'A daily selection of privately Personalized reads; no accounts or Signups required, has been the industry" s standard dummy text eveer since the 1500s, when an unknown Printer took a standard dummy text.',
         detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
-        featured_image: 'images/modal.png',
+        featured_image: 'images/5G.png',
         lang_list: ['css', 'html', 'bootsrap', 'Ruby', 'Github', 'Codekit', 'Codepen'],
         source: 'https://github.com/canon20paul/My-Portfolio-setup-Desktop-version',
         live_demo: 'https://canon20paul.github.io/My-Portfolio-setup-Desktop-version/',
@@ -45,7 +45,7 @@ const works = [
         description:
             'A daily selection of privately Personalized reads; no accounts or Signups required, has been the industry" s standard dummy text eveer since the 1500s, when an unknown Printer took a standard dummy text.',
         detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
-        featured_image: 'images/modal.png',
+        featured_image: 'images/5G.png',
         lang_list: ['css', 'html', 'bootsrap', 'Ruby', 'Github', 'Codekit', 'Codepen'],
         source: 'https://github.com/canon20paul/My-Portfolio-setup-Desktop-version',
         live_demo: 'https://canon20paul.github.io/My-Portfolio-setup-Desktop-version/',
@@ -55,7 +55,7 @@ const works = [
         description:
             'A daily selection of privately Personalized reads; no accounts or Signups required, has been the industry" s standard dummy text eveer since the 1500s, when an unknown Printer took a standard dummy text.',
         detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
-        featured_image: 'images/modal.png',
+        featured_image: 'images/5G.png',
         lang_list: ['css', 'html', 'bootsrap', 'Ruby', 'Github', 'Codekit', 'Codepen'],
         source: 'https://github.com/canon20paul/My-Portfolio-setup-Desktop-version',
         live_demo: 'https://canon20paul.github.io/My-Portfolio-setup-Desktop-version/',
