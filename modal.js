@@ -1,3 +1,4 @@
+/*eslint linebreak-style: ["error", "windows"]*/
 const projectsC = document.querySelector('.works');
 const works = [
   {
@@ -7,8 +8,8 @@ const works = [
     detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
     featured_image: 'images/5G.png',
     lang_list: ['css', 'html', 'bootsrap', 'Ruby', 'Github', 'Codekit', 'Codepen'],
-    source: 'https://github.com/canon20paul/My-Portfolio-setup-Desktop-version',
-    live_demo: 'https://canon20paul.github.io/My-Portfolio-setup-Desktop-version/',
+    source: 'https://github.com/canon20paul/My-Portfolio-Paul-Malongo',
+    live_demo: ' https://canon20paul.github.io/Portfolio-Paul-Malongo/',
   },
   {
     title: 'Multi-post Stories2 Gain+Glory',
@@ -17,8 +18,8 @@ const works = [
     detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
     featured_image: 'images/5G.png',
     lang_list: ['Github', 'Codekit', 'Codepen'],
-    source: 'https://github.com/canon20paul/My-Portfolio-setup-Desktop-version',
-    live_demo: 'https://canon20paul.github.io/My-Portfolio-setup-Desktop-version/',
+      source: 'https://github.com/canon20paul/My-Portfolio-Paul-Malongo',
+      live_demo: ' https://canon20paul.github.io/Portfolio-Paul-Malongo/',
   },
   {
     title: 'Multi-post Stories3 Gain+Glory',
@@ -27,8 +28,8 @@ const works = [
     detail: "Lore   Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
     featured_image: 'images/5G.png',
     lang_list: ['css', 'html', 'bootsrap', 'Ruby', 'Github', 'Codekit', 'Codepen'],
-    source: 'https://github.com/canon20paul/My-Portfolio-setup-Desktop-version',
-    live_demo: 'https://canon20paul.github.io/My-Portfolio-setup-Desktop-version/',
+      source: 'https://github.com/canon20paul/My-Portfolio-Paul-Malongo',
+      live_demo: ' https://canon20paul.github.io/Portfolio-Paul-Malongo/',
   },
   {
     title: 'Multi-post Stories4 Gain+Glory',
@@ -37,8 +38,8 @@ const works = [
     detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
     featured_image: 'images/5G.png',
     lang_list: ['css', 'html', 'bootsrap', 'Ruby', 'Github', 'Codekit', 'Codepen'],
-    source: 'https://github.com/canon20paul/My-Portfolio-setup-Desktop-version',
-    live_demo: 'https://canon20paul.github.io/My-Portfolio-setup-Desktop-version/',
+      source: 'https://github.com/canon20paul/My-Portfolio-Paul-Malongo',
+      live_demo: ' https://canon20paul.github.io/Portfolio-Paul-Malongo/',
   },
   {
     title: 'Multi-post Stories5 Gain+Glory',
@@ -47,8 +48,8 @@ const works = [
     detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
     featured_image: 'images/5G.png',
     lang_list: ['css', 'html', 'bootsrap', 'Ruby', 'Github', 'Codekit', 'Codepen'],
-    source: 'https://github.com/canon20paul/My-Portfolio-setup-Desktop-version',
-    live_demo: 'https://canon20paul.github.io/My-Portfolio-setup-Desktop-version/',
+      source: 'https://github.com/canon20paul/My-Portfolio-Paul-Malongo',
+      live_demo: ' https://canon20paul.github.io/Portfolio-Paul-Malongo/',
   },
   {
     title: 'Multi-post Stories6 Gain+Glory',
@@ -57,8 +58,8 @@ const works = [
     detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
     featured_image: 'images/5G.png',
     lang_list: ['css', 'html', 'bootsrap', 'Ruby', 'Github', 'Codekit', 'Codepen'],
-    source: 'https://github.com/canon20paul/My-Portfolio-setup-Desktop-version',
-    live_demo: 'https://canon20paul.github.io/My-Portfolio-setup-Desktop-version/',
+      source: 'https://github.com/canon20paul/My-Portfolio-Paul-Malongo',
+      live_demo: ' https://canon20paul.github.io/Portfolio-Paul-Malongo/',
   },
 ];
 

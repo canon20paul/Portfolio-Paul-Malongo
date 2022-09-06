@@ -1,3 +1,4 @@
+/*eslint linebreak-style: ["error", "windows"]*/
 const hamburger = document.querySelector('.Hamburger');
 const navmenu = document.querySelector('.Menu-items');
 // eslint-disable-next-line no-unused-vars
