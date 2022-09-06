@@ -142,4 +142,4 @@ function removeBlur() {
   document.querySelector('.main-wrapper').removeAttribute('id');
   const shut = document.querySelector('.wrap');
   shut.remove();
-}
+}}
