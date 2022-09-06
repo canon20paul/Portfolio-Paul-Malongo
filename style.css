@@ -1,9 +1,10 @@
+/* stylelint-disable csstree/validator */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* Common styles */
 * {
   margin: 0;
-  padding: 0;
+  padding: 0 0;
   box-sizing: border - box;
   text-decoration: none;
   list-style: none;
@@ -28,11 +29,12 @@ body {
   width: 100%;
   height: 100vh;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 .main-wrapper {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   margin-bottom: 8rem;
 }
 
@@ -268,6 +270,7 @@ button:active {
     width: 100%;
     height: 2.75rem;
     padding-top: 2rem;
+    transition: 1s;
   }
 
   .welcome {
@@ -309,6 +312,7 @@ button:active {
     flex-direction: column;
     align-items: center;
     z-index: 0;
+    transition: 1s;
   }
 
   .header1 {
@@ -323,6 +327,7 @@ button:active {
     line-height: 6.2rem;
     text-align: center;
     color: var(--Primary-text-color);
+    transition: 1s;
   }
 
   .header1::after {
@@ -338,6 +343,7 @@ button:active {
     text-align: center;
     color: var(--buttons-color);
     margin-bottom: 2rem;
+    transition: 1s;
   }
 
   .header-detail {
@@ -351,6 +357,7 @@ button:active {
     line-height: 2.95rem;
     text-align: center;
     color: var(--Primary-text-color);
+    transition: 1s;
   }
 
   .social {
@@ -361,6 +368,7 @@ button:active {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 1s;
   }
 
   .social image {
@@ -372,6 +380,7 @@ button:active {
     top: -20rem;
     margin-bottom: 0;
     margin-top: 5.5rem;
+    transition: 1s;
   }
 
   /* End of Header section */
@@ -389,6 +398,7 @@ button:active {
     grid-template-areas:
       "Work1 Work2 Work3"
       "Work4 Work5 Work6";
+    transition: 1s;
   }
 
   .title {
@@ -565,6 +575,7 @@ button:active {
     grid-template-areas:
       "about about about"
       "languages frameworks skills";
+    transition: 1s;
   }
 
   .about {
@@ -842,6 +853,7 @@ button:active {
       "Work1 Work2"
       "Work3 Work4"
       "Work5 Work6";
+    transition: 1s;
   }
 
   .about-section {
@@ -854,6 +866,7 @@ button:active {
       "about about"
       "languages frameworks"
       "skills skill ";
+    transition: 1s;
   }
 
   .about {
@@ -869,6 +882,7 @@ button:active {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: 1s;
   }
 
   .conatct-header {
@@ -888,6 +902,7 @@ button:active {
   .social {
     position: relative;
     top: -10%;
+    transition: 1s;
   }
 
   .Arrow {
@@ -1053,6 +1068,7 @@ button:active {
       "Work4"
       "Work5"
       "Work6";
+    transition: 1s;
   }
 
   .about-section {
@@ -1066,6 +1082,7 @@ button:active {
       "languages"
       "frameworks"
       "skills";
+    transition: 1s;
   }
 
   .about {
@@ -1126,7 +1143,7 @@ button:active {
   .wrap1-img {
     width: 100%;
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     margin-top: -19rem;
   }
 
@@ -1330,6 +1347,7 @@ button:active {
     justify-content: space-around;
     right: 15.612px;
     top: 0;
+    transition: 1s;
   }
 
   .bar {
@@ -1338,6 +1356,28 @@ button:active {
     width: hug(16px);
     height: 2px;
     background-color: var(--Primary-text-color);
+    transition: 1s;
+  }
+
+  .Hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .Hamburger.active .bar:nth-child(1) {
+    transform: translateY(5px) rotate(45deg);
+    background: #93a79d;
+  }
+
+  .Hamburger.active .bar:nth-child(3) {
+    transform: translateY(-5px) rotate(-45deg);
+    background: #93a79d;
+  }
+
+  .Menu-items.active {
+    display: block;
+    width: 100%;
+    z-index: 50;
+    transition: 1s;
   }
 
   .HamburgerX {
@@ -1374,15 +1414,20 @@ button:active {
     text-align: left;
     color: #28352f;
     margin-left: 1rem;
+    transition: 1s;
   }
 
   .Menu-items {
     display: none;
     position: absolute;
-    height: 100px;
-    width: 30%;
-    left: 20px;
-    top: 98px;
+    height: 100%;
+    width: 95vw;
+    left: 0;
+    top: 8;
+    background-color: #fff;
+    background-position: center;
+    margin-top: 5%;
+    transition: 1s;
   }
 
   .nav--link {
@@ -1390,10 +1435,13 @@ button:active {
     font-weight: 600;
     font-size: 32px;
     line-height: 44px;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     display: flex;
     align-items: center;
     color: var(--Primary-text-color2);
+    background-color: #fff;
+    padding-left: 2.5rem;
+    transition: 1s;
 
     /* End of Navbar */
   }
@@ -1423,6 +1471,7 @@ button:active {
     line-height: 5rem;
     text-align: center;
     color: var(--Primary-text-color);
+    transition: 1s;
   }
 
   .header1::after {
@@ -1438,6 +1487,7 @@ button:active {
     text-align: center;
     color: var(--buttons-color);
     margin-bottom: 2rem;
+    transition: 1s;
   }
 
   .header-detail {
@@ -1453,6 +1503,7 @@ button:active {
     letter-spacing: 0.9px;
     text-align: center;
     color: var(--Primary-text-color);
+    transition: 1s;
   }
 
   .social {
@@ -1506,8 +1557,7 @@ button:active {
     align-items: center;
     text-align: center;
     color: var(--Primary-text-color);
-    width: 80%;
-    margin-bottom: 6rem;
+    width: 100%;
   }
 
   .works-title::after {
@@ -1517,6 +1567,7 @@ button:active {
     border-radius: 15%;
     background: var(--buttons-color);
     position: relative;
+    margin-top: 10%;
     right: 15rem;
     top: 7.5rem;
   }
@@ -1827,7 +1878,7 @@ button:active {
   .about-label {
     width: 337px;
     height: 22px;
-    font-family: "Inter" "Courier New", Courier, monospace;
+    font-family: Inter, "Courier New", Courier, monospace;
     font-style: normal;
     font-weight: 600;
     font-size: 2.5rem;
@@ -1992,4 +2043,8 @@ button:active {
 
 .Menu-items a:hover {
   color: var(--buttons-color);
+}
+
+.bar:hover {
+  background-color: var(--buttons-color);
 }

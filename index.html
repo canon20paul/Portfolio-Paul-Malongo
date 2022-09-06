@@ -19,12 +19,12 @@
     <div class="main-wrapper" id="main-wrapper">
       <!-- Navigation Bar -->
       <nav class="navbar">
-        <a href="#" class="welcome">Welcome</a>
+        <a href="#" id="welcome" class="welcome">Welcome</a>
         <ul class="Menu-items">
-          <li><a href="#" class="nav--link">Portoflio</a></li>
-          <li><a href="#" class="nav--link">About</a></li>
-          <li><a href="#" class="nav--link">Contact</a></li>
-        </ul>
+          <li><a class="nav--link" href="#work" >Portoflio</a></li>
+          <li><a href="#about" class="nav--link">About</a></li>
+          <li><a href="#address" class="nav--link">Contact</a></li>
+               </ul>
         <div class="Hamburger">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -88,11 +88,9 @@
           <!-- End of Social medio Links -->
       </section>
       <!-- Works Section -->
-
-     
-      <section class="work">
-         <div class="title">
-        <h2 class="works-title">&nbsp;&nbsp;&nbsp;&nbsp;My Recent &nbsp;&nbsp;&nbsp;&nbsp;Works</h2>
+      <section id="projects" class="works">
+        <div class="title">
+        <h2 id="work" class="works-title">&nbsp;&nbsp;&nbsp;&nbsp;My Recent &nbsp;&nbsp;&nbsp;&nbsp;Works</h2>
         </div>
       <div class="works">
         
@@ -175,7 +173,7 @@
       <!-- End of Works Section -->
 
             <!-- About Section-->
-            <section class="about-section">
+            <section id="about" class="about-section">
         <div class="about">
             <h2 class="about-contact-header">About me</h2>
              <p class="about-detail">
@@ -221,7 +219,7 @@
         <!-- End of About Section-->
       
      <!-- Contact-Section -->
-      <section class="contact-section">
+      <section id="contact" class="contact-section">
         <h2 class="conatct-header">I'm always interested in hearing about new projects, 
                                                             so if you'd like to chat  
                                                             please get in touch.
@@ -271,12 +269,15 @@
           /></a>
           </li>
         </ul>
-        <a class="address">myemailhere@email.com</a></footer>
+        <a class="address" id="address">myemailhere@email.com</a></footer>
     </div>
     <!-- End main Wrapper -->
 
      <script src="index.js"></script>
     <script src="modal.js"></script>
     <!-- <script src="dataStorage.js"></script> -->
+      <script src="mobile-menu.js"></script>
+    <!-- <script src="modal.js"></script>
+    <script src="dataStorage.js"></script> -->
   </body>
 </html>
