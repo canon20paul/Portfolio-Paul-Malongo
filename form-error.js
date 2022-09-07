@@ -5,3 +5,6 @@ document.getElementById('contactF').addEventListener('submit', (event) => {
     document.querySelector('.error').innerHTML = 'Your email address should be in lowercase';
   }
 });
+document.getElementById('email').addEventListener('click', () => {
+    document.getElementsByClassName('.error').textContent = ' '
+})
