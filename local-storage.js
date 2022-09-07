@@ -1,20 +1,21 @@
 // This is for local storage
-const userContent = {
+const  contactForm = document.querySelector('#contactF');
+const client = {
     names: '',
     email: '',
-    message: '',
+    message: ''
 };
 
-form.addEventListener('keydown', () => {
-    userContent.names = document.querySelector('#names').value;
-    userContent.email = document.querySelector('#email').value;
-    userContent.textArea = document.querySelector('#message').value;
+contactForm.addEventListener('change', () => {
+    client.names = document.querySelector('#names').value;
+    client.email = document.querySelector('#email').value;
+    client.message = document.querySelector('#message').value;
 
-    localStorage.setItem('stored', JSON.stringify(userContent));
+    localStorage.setItem('content', JSON.stringify(client));
 });
-const storedObject = JSON.parse(localStorage.getItem('stored'));
-if (storedObject) {
-    document.querySelector('#names').value = storedObject.names;
-    document.querySelector('#email').value = storedObject.email;
-    document.querySelector('#message').value = storedObject.message;
+const dataOBJ = JSON.parse(localStorage.getItem('content'));
+if (dataOBJ) {
+    document.querySelector('#names').value = dataOBJ.names;
+    document.querySelector('#email').value = dataOBJ.email;
+    document.querySelector('#message').value = dataOBJ.message;
 }
