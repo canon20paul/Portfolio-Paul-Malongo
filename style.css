@@ -28,6 +28,7 @@ html {
 body {
   width: 100%;
   height: 100vh;
+  text-decoration: none;
   box-sizing: border-box;
 }
 
@@ -35,6 +36,10 @@ body {
   width: 100%;
   height: 100vh;
   margin-bottom: 8rem;
+}
+
+#blur {
+  filter: blur(100px);
 }
 
 footer {
@@ -53,6 +58,211 @@ button:active {
 
 /* Desktop version */
 @media (min-width: 500px) {
+  .wrap {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 91.8em;
+    left: 0;
+    top: 0;
+    background: #c1c7d0;
+    mix-blend-mode: multiply;
+  }
+
+  .wrap1 {
+    display: flex;
+    flex-flow: column;
+    height: 82em;
+    width: 72.25em;
+    margin: auto auto;
+    background: #fff;
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 8px;
+    z-index: 3;
+  }
+
+  .wrap1-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -3rem;
+  }
+
+  .wrap1-img-img {
+    width: 95%;
+    height: 41.5rem;
+    margin: auto;
+    z-index: 9;
+  }
+
+  .wrap-header {
+    width: 95%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 4em;
+    z-index: 5;
+  }
+
+  .xx {
+    width: 95%;
+    height: 3.5rem;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+  .xx-img {
+    width: 4rem;
+    height: 100%;
+    background: #ebecf0;
+    mix-blend-mode: multiply;
+    border-radius: 8px;
+    background-image: url('images/cancel.png');
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+    border: none;
+  }
+
+  .wrap-header h3 {
+    width: 50%;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 100%;
+    color: #172b4d;
+  }
+
+  .wrap-bottom {
+    margin: auto;
+    margin-top: 10em;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 100%;
+    height: 10em;
+  }
+
+  .wrap-detail {
+    width: 95%;
+    margin: auto;
+    height: 236px;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 13px;
+    line-height: 26px;
+    text-align: justify;
+    color: #344563;
+    margin-bottom: 1em;
+  }
+
+  .wrap-bottom ul {
+    width: max-content;
+    margin-left: 1.8rem;
+    margin-top: -8rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .wrap-bottom ul li {
+    width: fit-content;
+  }
+
+  .btnD {
+    margin: auto;
+    width: 50%;
+    height: 10em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .btnPP-imgS {
+    float: right;
+    width: 45px;
+    height: 40px;
+    padding: 0 0;
+    margin: 0;
+  }
+
+  .btnPP-imgL {
+    float: right;
+    width: 30px;
+    height: 20px;
+    padding-left: 15px;
+    padding-bottom: 12px;
+  }
+
+  .spanS {
+    float: left;
+    padding-top: 15px;
+    padding-left: 10px;
+    color: #fff;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 12px;
+    text-decoration: none;
+  }
+
+  .spanL {
+    float: left;
+    padding-top: 5px;
+    padding-left: 15px;
+    color: #fff;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 12px;
+    text-decoration: none;
+  }
+
+  .live {
+    display: flex;
+    flex-direction: column nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1px;
+    gap: 2px;
+    position: absolute;
+    width: 124px;
+    height: 48px;
+    left: calc(51.5% - 124px / 2 + 91px);
+    bottom: 23em;
+    background: #36b37e;
+    border-radius: 8px;
+    line-height: 12px;
+    text-decoration: none;
+  }
+
+  .source {
+    display: flex;
+    flex-direction: column nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 2px;
+    gap: 2px;
+    position: absolute;
+    width: 144px;
+    height: 48px;
+    left: calc(62.5% - 124px / 2 + 91px);
+    bottom: 23em;
+    background: #36b37e;
+    border-radius: 8px;
+    line-height: 12px;
+  }
+
   .navbar {
     display: flex;
     flex-flow: row nowrap;
@@ -152,8 +362,8 @@ button:active {
 
   .social {
     position: relative;
-    top: -20%;
-    width: 15%;
+    top: -15%;
+    width: 20rem;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -167,7 +377,7 @@ button:active {
 
   .Arrow {
     position: relative;
-    top: -30rem;
+    top: -20rem;
     margin-bottom: 0;
     margin-top: 5.5rem;
     transition: 1s;
@@ -179,32 +389,36 @@ button:active {
 
   .works {
     margin: auto;
-    width: 80%;
+    width: 100%;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 352px 352px;
+    grid-template-rows: 352px 352px;
     row-gap: 3rem;
     grid-template-areas:
-      "title       title         title"
       "Work1 Work2 Work3"
       "Work4 Work5 Work6";
     transition: 1s;
   }
 
   .title {
-    grid-area: title;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    margin-bottom: 6rem;
+    margin-top: 3rem;
   }
 
   .works-title {
-    font-family: Inter "Courier New", Courier, monospace;
-    font-weight: 900;
-    font-size: 4rem;
+    font-family: "Inter" "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.1rem;
     line-height: 7rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
     color: var(--Primary-text-color);
     width: fit-content;
   }
@@ -213,6 +427,7 @@ button:active {
     grid-area: Work1;
     margin: auto;
     display: flex;
+    flex-flow: column;
     align-items: flex-end;
     width: 327px;
     height: 100%;
@@ -225,6 +440,7 @@ button:active {
     grid-area: Work2;
     margin: auto;
     display: flex;
+    flex-flow: column;
     align-items: flex-end;
     width: 327px;
     height: 100%;
@@ -237,6 +453,7 @@ button:active {
     grid-area: Work3;
     margin: auto;
     display: flex;
+    flex-flow: column;
     align-items: flex-end;
     width: 327px;
     height: 100%;
@@ -249,6 +466,7 @@ button:active {
     grid-area: Work4;
     margin: auto;
     display: flex;
+    flex-flow: column;
     align-items: flex-end;
     width: 327px;
     height: 100%;
@@ -261,6 +479,7 @@ button:active {
     grid-area: Work5;
     margin: auto;
     display: flex;
+    flex-flow: column;
     align-items: flex-end;
     width: 327px;
     height: 100%;
@@ -273,6 +492,7 @@ button:active {
     grid-area: Work6;
     margin: auto;
     display: flex;
+    flex-flow: column;
     align-items: flex-end;
     width: 327px;
     height: 100%;
@@ -283,13 +503,23 @@ button:active {
 
   .work-frame {
     display: flex;
-    flex-flow: column;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 50%;
     background: var(--white);
     border-radius: 8px;
+  }
+
+  .work-card img {
+    display: flex;
+    align-self: flex-start;
+    width: 100%;
+    height: 50%;
+    z-index: 0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
   }
 
   .work-title {
@@ -335,12 +565,12 @@ button:active {
   }
 
   .about-section {
-    width: 80%;
+    width: 100%;
     margin: auto;
     height: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 320px 352px;
+    grid-template-rows: 350px 352px;
     row-gap: 3rem;
     grid-template-areas:
       "about about about"
@@ -350,8 +580,8 @@ button:active {
 
   .about {
     grid-area: about;
-    width: 125%;
-    margin-left: -14rem;
+    width: 100%;
+    margin: auto;
     height: auto;
     background: url("images/abt.png");
     background-repeat: no-repeat;
@@ -395,12 +625,15 @@ button:active {
     justify-content: center;
     font-size: 1.8rem;
     padding: 2px;
-    width: 160px;
-    height: 70px;
+    width: 159px;
+    height: 50px;
     background: var(--buttons-color);
     border-radius: 4px;
     color: var(--white);
-    margin-top: 3rem;
+    flex: none;
+    position: relative;
+    bottom: 0;
+    order: 2;
   }
 
   .llang {
@@ -596,16 +829,27 @@ button:active {
 /* Mobile Version */
 
 @media (max-width: 1200px) {
+  .live {
+    width: 124px;
+    height: 48px;
+    left: calc(50.5% - 124px / 2 + 91px);
+    bottom: 23em;
+  }
+
+  .source {
+    width: 144px;
+    height: 48px;
+    left: calc(64.5% - 124px / 2 + 91px);
+    bottom: 23em;
+  }
+
   .works {
-    margin: auto;
-    width: 90%;
     height: auto;
     display: grid;
-    grid-template-columns: 30% 1fr;
-    grid-template-rows: 200px 352px 352px 352px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 352px 352px 352px;
     grid-gap: 23px;
     grid-template-areas:
-      "title            title"
       "Work1 Work2"
       "Work3 Work4"
       "Work5 Work6";
@@ -627,8 +871,8 @@ button:active {
 
   .about {
     grid-area: about;
-    width: 125%;
-    margin-left: -14rem;
+    margin: auto;
+    width: 96%;
     height: auto;
     background: url("images/abt.png");
     background-repeat: no-repeat;
@@ -668,14 +912,156 @@ button:active {
 }
 
 @media (max-width: 900px) {
+  .wrap1-img {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -10rem;
+  }
+
+  .wrap1-img-img {
+    width: 95%;
+    height: 24rem;
+    margin: auto;
+    z-index: 3;
+  }
+
+  .wrap-header {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 4em;
+    z-index: 5;
+  }
+
+  .xx {
+    width: 87.6%;
+    height: 3.5rem;
+    margin: auto;
+    margin-top: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    color: #fff;
+    z-index: 50;
+  }
+
+  .xx-img {
+    width: 4rem;
+    height: 100%;
+    border-radius: 8px;
+    background-color: transparent;
+    background-image: url('images/cancel.png');
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+    border: none;
+  }
+
+  .wrap-header h3 {
+    width: 80%;
+    height: auto;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 4.6rem;
+    color: #172b4d;
+    margin-top: -8rem;
+  }
+
+  .wrap-bottom {
+    margin: auto;
+    margin-top: 5em;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 100%;
+    height: 10em;
+  }
+
+  .wrap-detail {
+    width: 90%;
+    margin: auto;
+    height: 236px;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.5rem;
+    line-height: 24px;
+    text-align: justify;
+    color: #344563;
+    margin-bottom: 1em;
+  }
+
+  .spanS {
+    float: left;
+    padding-top: 15px;
+    padding-left: 10px;
+    color: #fff;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 12px;
+    text-decoration: none;
+  }
+
+  .spanL {
+    float: left;
+    padding-top: 5px;
+    padding-left: 15px;
+    color: #fff;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 12px;
+    text-decoration: none;
+  }
+
+  .live {
+    display: flex;
+    flex-direction: column nowrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 1px;
+    gap: 2px;
+    position: absolute;
+    width: 154px;
+    height: 50px;
+    left: calc(20% - 124px / 2 + 91px);
+    bottom: 4.5em;
+    background: #36b37e;
+    border-radius: 8px;
+    line-height: 12px;
+    text-decoration: none;
+  }
+
+  .source {
+    display: flex;
+    flex-direction: column nowrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 2px;
+    gap: 2px;
+    position: absolute;
+    width: 174px;
+    height: 50px;
+    left: calc(50.5% - 124px / 2 + 91px);
+    bottom: 4.5em;
+    background: #36b37e;
+    border-radius: 8px;
+    line-height: 12px;
+  }
+
   .works {
     height: auto;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 200px 474px 474px 474px 474px 474px 474px;
+    grid-template-rows: 474px 474px 474px 474px 474px 474px;
     grid-gap: 23px;
     grid-template-areas:
-      "title"
       "Work1"
       "Work2"
       "Work3"
@@ -689,7 +1075,7 @@ button:active {
     height: auto;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 420px 352px 352px 352px;
+    grid-template-rows: 460px 352px 352px 352px;
     grid-gap: 23px;
     grid-template-areas:
       "about"
@@ -697,6 +1083,21 @@ button:active {
       "frameworks"
       "skills";
     transition: 1s;
+  }
+
+  .about {
+    grid-area: about;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    background: url("images/abt.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: fill;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 8rem;
   }
 
   .conatct-header {
@@ -714,6 +1115,218 @@ button:active {
 }
 
 @media (max-width: 550px) {
+  /* Modal */
+  .wrap {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 91.8em;
+    left: 0;
+    top: 0;
+    background: #c1c7d0;
+    mix-blend-mode: multiply;
+  }
+
+  .wrap1 {
+    display: flex;
+    flex-flow: column;
+    height: 97%;
+    width: 95%;
+    margin: auto;
+    background: #fff;
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 8px;
+    z-index: 3;
+  }
+
+  .wrap1-img {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -19rem;
+  }
+
+  .wrap1-img-img {
+    width: 95%;
+    height: 24rem;
+    margin: auto;
+    z-index: 3;
+  }
+
+  .wrap-header {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 4em;
+    z-index: 5;
+  }
+
+  .xx {
+    width: 87.6%;
+    height: 3.5rem;
+    margin: auto;
+    margin-top: 4rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    color: #fff;
+    z-index: 50;
+  }
+
+  .xx-img {
+    width: 4rem;
+    height: 100%;
+    border-radius: 8px;
+    background-color: transparent;
+    background-image: url('images/Enable.png');
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+    border: none;
+  }
+
+  .wrap-header h3 {
+    width: 80%;
+    height: auto;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 4.6rem;
+    color: #172b4d;
+    margin-top: -12rem;
+  }
+
+  .wrap-bottom {
+    margin: auto;
+    margin-top: 10em;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 100%;
+    height: 10em;
+  }
+
+  .wrap-detail {
+    width: 90%;
+    margin: auto;
+    height: 236px;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.5rem;
+    line-height: 24px;
+    text-align: justify;
+    color: #344563;
+    margin-bottom: 1em;
+  }
+
+  .wrap-bottom ul {
+    width: max-content;
+    margin-left: 1.8rem;
+    margin-top: -24rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .wrap-bottom ul li {
+    width: fit-content;
+  }
+
+  .wrap-bottom ul li:nth-child(n + 4) {
+    display: none;
+  }
+
+  .btnD {
+    margin: auto;
+    width: 50%;
+    height: 10em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .btnPP-imgS {
+    float: right;
+    width: 45px;
+    height: 40px;
+    padding: 0 0;
+    margin: 0;
+  }
+
+  .btnPP-imgL {
+    float: right;
+    width: 30px;
+    height: 20px;
+    padding-left: 15px;
+    padding-bottom: 12px;
+  }
+
+  .spanS {
+    float: left;
+    padding-top: 15px;
+    padding-left: 10px;
+    color: #fff;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 12px;
+    text-decoration: none;
+  }
+
+  .spanL {
+    float: left;
+    padding-top: 5px;
+    padding-left: 15px;
+    color: #fff;
+    font-family: "Inter", "Courier New", Courier, monospace;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 12px;
+    text-decoration: none;
+  }
+
+  .live {
+    display: flex;
+    flex-direction: column nowrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 1px;
+    gap: 2px;
+    position: absolute;
+    width: 154px;
+    height: 50px;
+    left: calc(1% - 124px / 2 + 91px);
+    bottom: 2.5em;
+    background: #36b37e;
+    border-radius: 8px;
+    line-height: 12px;
+    text-decoration: none;
+  }
+
+  .source {
+    display: flex;
+    flex-direction: column nowrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 2px;
+    gap: 2px;
+    position: absolute;
+    width: 174px;
+    height: 50px;
+    left: calc(45.5% - 124px / 2 + 91px);
+    bottom: 2.5em;
+    background: #36b37e;
+    border-radius: 8px;
+    line-height: 12px;
+  }
+
   /* Navbar */
 
   .navbar {
@@ -764,7 +1377,6 @@ button:active {
     display: block;
     width: 100%;
     z-index: 50;
-    transition: 1s;
   }
 
   .HamburgerX {
@@ -836,7 +1448,7 @@ button:active {
   /* Header section */
   .header {
     width: 100%;
-    height: 100%;
+    height: 120%;
     padding-bottom: 8.55rem;
     background: url("images/Mob-main.png");
     background-repeat: no-repeat;
@@ -894,7 +1506,7 @@ button:active {
   }
 
   .social {
-    width: 40%;
+    width: 20rem;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -916,10 +1528,9 @@ button:active {
     height: auto;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 200px 474px 474px 474px 474px 474px 474px;
+    grid-template-rows: 474px 474px 474px 474px 474px 474px;
     grid-gap: 23px;
     grid-template-areas:
-      "title"
       "Work1"
       "Work2"
       "Work3"
@@ -929,19 +1540,18 @@ button:active {
   }
 
   .title {
-    grid-area: title;
+    /* grid-area: title; */
     display: flex;
     justify-content: center;
     align-items: flex-start;
   }
 
   .works-title {
-    border: 5px solid rgb(245, 185, 57);
     font-family: "Inter" "Courier New", Courier, monospace;
     font-style: normal;
     font-weight: 700;
     font-size: 4.1rem;
-    line-height: 6rem;
+    line-height: 7rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -965,6 +1575,7 @@ button:active {
     grid-area: Work1;
     margin: auto;
     display: flex;
+    flex-flow: column;
     align-items: flex-end;
     width: 327px;
     height: 100%;
@@ -977,6 +1588,7 @@ button:active {
     grid-area: Work2;
     margin: auto;
     display: flex;
+    flex-flow: column;
     align-items: flex-end;
     width: 327px;
     height: 100%;
@@ -989,6 +1601,7 @@ button:active {
     grid-area: Work3;
     margin: auto;
     display: flex;
+    flex-flow: column;
     align-items: flex-end;
     width: 327px;
     height: 100%;
@@ -1001,6 +1614,7 @@ button:active {
     grid-area: Work4;
     margin: auto;
     display: flex;
+    flex-flow: column;
     align-items: flex-end;
     width: 327px;
     height: 100%;
@@ -1013,6 +1627,7 @@ button:active {
     grid-area: Work5;
     margin: auto;
     display: flex;
+    flex-flow: column;
     align-items: flex-end;
     width: 327px;
     height: 100%;
@@ -1025,6 +1640,7 @@ button:active {
     grid-area: Work6;
     margin: auto;
     display: flex;
+    flex-flow: column;
     align-items: flex-end;
     width: 327px;
     height: 100%;
@@ -1039,9 +1655,20 @@ button:active {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 50%;
+    height: 60%;
     background: var(--white);
     border-radius: 8px;
+    z-index: 10;
+  }
+
+  .work-card img {
+    display: flex;
+    align-self: flex-start;
+    width: 100%;
+    height: 55%;
+    z-index: 0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
   }
 
   .work-title {
@@ -1110,7 +1737,7 @@ button:active {
 
   .about {
     grid-area: about;
-    width: 95%;
+    width: 100%;
     margin: auto;
     height: 100%;
     background: url("images/abt.png");
@@ -1362,7 +1989,7 @@ button:active {
 
 /* ANIMATION SELECTORS */
 .Menu-items a {
-  transition: color 1s;
+  transition: color 0.6s;
 }
 
 .work-card {
