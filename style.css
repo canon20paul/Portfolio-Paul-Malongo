@@ -1420,6 +1420,7 @@ button:active {
 
 .Menu-items a:hover {
   color: var(--buttons-color);
+font-weight: 900;
 }
 
 .bar:hover {
