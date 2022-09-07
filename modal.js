@@ -1,4 +1,3 @@
-/*eslint linebreak-style: ["error", "windows"]*/
 const projectsC = document.querySelector('.works');
 const works = [
   {
@@ -18,8 +17,8 @@ const works = [
     detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
     featured_image: 'images/5G.png',
     lang_list: ['Github', 'Codekit', 'Codepen'],
-      source: 'https://github.com/canon20paul/My-Portfolio-Paul-Malongo',
-      live_demo: ' https://canon20paul.github.io/Portfolio-Paul-Malongo/',
+    source: 'https://github.com/canon20paul/My-Portfolio-Paul-Malongo',
+    live_demo: ' https://canon20paul.github.io/Portfolio-Paul-Malongo/',
   },
   {
     title: 'Multi-post Stories3 Gain+Glory',
@@ -28,8 +27,8 @@ const works = [
     detail: "Lore   Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
     featured_image: 'images/5G.png',
     lang_list: ['css', 'html', 'bootsrap', 'Ruby', 'Github', 'Codekit', 'Codepen'],
-      source: 'https://github.com/canon20paul/My-Portfolio-Paul-Malongo',
-      live_demo: ' https://canon20paul.github.io/Portfolio-Paul-Malongo/',
+    source: 'https://github.com/canon20paul/My-Portfolio-Paul-Malongo',
+    live_demo: ' https://canon20paul.github.io/Portfolio-Paul-Malongo/',
   },
   {
     title: 'Multi-post Stories4 Gain+Glory',
@@ -38,8 +37,8 @@ const works = [
     detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
     featured_image: 'images/5G.png',
     lang_list: ['css', 'html', 'bootsrap', 'Ruby', 'Github', 'Codekit', 'Codepen'],
-      source: 'https://github.com/canon20paul/My-Portfolio-Paul-Malongo',
-      live_demo: ' https://canon20paul.github.io/Portfolio-Paul-Malongo/',
+    source: 'https://github.com/canon20paul/My-Portfolio-Paul-Malongo',
+    live_demo: ' https://canon20paul.github.io/Portfolio-Paul-Malongo/',
   },
   {
     title: 'Multi-post Stories5 Gain+Glory',
@@ -48,8 +47,8 @@ const works = [
     detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
     featured_image: 'images/5G.png',
     lang_list: ['css', 'html', 'bootsrap', 'Ruby', 'Github', 'Codekit', 'Codepen'],
-      source: 'https://github.com/canon20paul/My-Portfolio-Paul-Malongo',
-      live_demo: ' https://canon20paul.github.io/Portfolio-Paul-Malongo/',
+    source: 'https://github.com/canon20paul/My-Portfolio-Paul-Malongo',
+    live_demo: ' https://canon20paul.github.io/Portfolio-Paul-Malongo/',
   },
   {
     title: 'Multi-post Stories6 Gain+Glory',
@@ -58,22 +57,16 @@ const works = [
     detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
     featured_image: 'images/5G.png',
     lang_list: ['css', 'html', 'bootsrap', 'Ruby', 'Github', 'Codekit', 'Codepen'],
-      source: 'https://github.com/canon20paul/My-Portfolio-Paul-Malongo',
-      live_demo: ' https://canon20paul.github.io/Portfolio-Paul-Malongo/',
+    source: 'https://github.com/canon20paul/My-Portfolio-Paul-Malongo',
+    live_demo: ' https://canon20paul.github.io/Portfolio-Paul-Malongo/',
   },
 ];
 
-// const workCardShouldReverse = (index) => {
-//     if (index % 2 === 0) {
-//         return 'row-reverse work-item-2';
-//     }
-//     return 'work-item-1';
-// };
 const languageHtml = (workObj, key, langList = '') => {
   /* eslint-disable no-restricted-syntax */
   for (const lang in workObj[key].lang_list) {
-    if(lang < 4 ) { langList += `<li class="lang-list-item">${workObj[key].lang_list[lang]}</li> `; }
-}
+    if (lang < 4) { langList += `<li class="lang-list-item">${workObj[key].lang_list[lang]}</li> `; }
+  }
   /* eslint-enable no-restricted-syntax */
   return langList;
 };
@@ -81,9 +74,10 @@ const languageHtml = (workObj, key, langList = '') => {
 const languageHtml2 = (workObj, key, langList = '') => {
   /* eslint-disable no-restricted-syntax */
   for (const lang in workObj[key].lang_list) {
-    if (lang ) { langList+=`<li class="lang-list-item">${workObj[key].lang_list[lang]}</li> `;
-}
-}
+    if (lang) {
+      langList += `<li class="lang-list-item">${workObj[key].lang_list[lang]}</li> `;
+    }
+  }
   /* eslint-enable no-restricted-syntax */
   return langList;
 };
@@ -92,7 +86,7 @@ let workCard = '';
 
 const appendWorks = (works) => {
   for (let i = 0; i < works.length; i += 1) {
-    workCard += ` <div class="workp${i+1} work-card">
+    workCard += ` <div class="workp${i + 1} work-card">
         <img class="Wimage" src="${works[i].featured_image}" alt="${works[i].title}" />
         <div class="work-frame">
         <h3 class="work-title">${works[i].title}</h3>

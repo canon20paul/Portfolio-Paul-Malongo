@@ -1377,7 +1377,6 @@ button:active {
     display: block;
     width: 100%;
     z-index: 50;
-    transition: 1s;
   }
 
   .HamburgerX {
