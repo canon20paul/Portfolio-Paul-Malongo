@@ -6,5 +6,5 @@ document.getElementById('contactF').addEventListener('submit', (event) => {
   }
 });
 document.getElementById('email').addEventListener('click', () => {
-    document.getElementsByClassName('.error').textContent = ' '
-})
+  document.getElementsByClassName('.error').textContent = ' ';
+});
