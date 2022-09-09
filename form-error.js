@@ -3,8 +3,8 @@ document.getElementById('contactF').addEventListener('submit', (event) => {
   if (email !== email.toLowerCase()) {
     event.preventDefault();
     document.querySelector('.error').innerHTML = 'Your email address should be in lowercase';
-    document.querySelector('.error').style.color = 'red'
-    document.getElementById('email').style.color = 'red'
-    document.getElementById('email').style.borderBlockColor = 'red'
+    document.querySelector('.error').style.color = 'red';
+    document.getElementById('email').style.color = 'red';
+    document.getElementById('email').style.borderBlockColor = 'red';
   }
 });
