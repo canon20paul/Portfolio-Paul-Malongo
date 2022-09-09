@@ -788,6 +788,7 @@ button:active {
     font-size: 1.5rem;
     font-weight: 400;
     border-radius: 4px;
+    transition: all 1s;
   }
 
   .contact-form textarea {
@@ -1939,6 +1940,7 @@ button:active {
     font-size: 1.5rem;
     font-weight: 400;
     border-radius: 4px;
+    transition: all 1s;
   }
 
   .contact-form textarea {
@@ -1991,6 +1993,7 @@ button:active {
   color: #f00;
   font-size: 1.5rem;
   margin-top: 1px;
+  transition: all 1s;
 }
 
 /* ANIMATION SELECTORS */
