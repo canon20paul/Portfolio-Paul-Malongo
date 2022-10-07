@@ -788,6 +788,7 @@ button:active {
     font-size: 1.5rem;
     font-weight: 400;
     border-radius: 4px;
+    transition: all 1s;
   }
 
   .contact-form textarea {
@@ -1100,6 +1101,13 @@ button:active {
     padding-bottom: 8rem;
   }
 
+  .about {
+    grid-area: about;
+    width: 100%;
+    margin: auto;
+    margin-left: %;
+  }
+
   .conatct-header {
     margin-top: 0;
     width: 35%;
@@ -1333,7 +1341,7 @@ button:active {
     display: flex;
     justify-content: space-between;
     width: 90%;
-    height: 2.75rem;
+    height: 5.75rem;
     margin: 12px 19px;
   }
 
@@ -1525,6 +1533,7 @@ button:active {
   /* Works section */
 
   .works {
+    margin: auto;
     height: auto;
     display: grid;
     grid-template-columns: 100%;
@@ -1939,6 +1948,7 @@ button:active {
     font-size: 1.5rem;
     font-weight: 400;
     border-radius: 4px;
+    transition: all 1s;
   }
 
   .contact-form textarea {
@@ -1985,6 +1995,13 @@ button:active {
   }
 
   /* End of Contact section */
+}
+
+.error {
+  color: #f00;
+  font-size: 1.5rem;
+  margin-top: 1px;
+  transition: all 1s;
 }
 
 /* ANIMATION SELECTORS */
@@ -2042,6 +2059,7 @@ button:active {
 
 .Menu-items a:hover {
   color: var(--buttons-color);
+  font-weight: 900;
 }
 
 .bar:hover {

@@ -13,7 +13,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link]()
+[Live Demo Link](https://canon20paul.github.io/Portfolio-Paul-Malongo/)
 
 
 ## Getting Started
