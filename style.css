@@ -1100,6 +1100,13 @@ button:active {
     padding-bottom: 8rem;
   }
 
+  .about {
+    grid-area: about;
+    width: 100%;
+    margin: auto;
+    margin-left: %;
+  }
+
   .conatct-header {
     margin-top: 0;
     width: 35%;
@@ -1333,7 +1340,7 @@ button:active {
     display: flex;
     justify-content: space-between;
     width: 90%;
-    height: 2.75rem;
+    height: 5.75rem;
     margin: 12px 19px;
   }
 
@@ -1525,6 +1532,7 @@ button:active {
   /* Works section */
 
   .works {
+    margin: auto;
     height: auto;
     display: grid;
     grid-template-columns: 100%;
