@@ -1,3 +1,4 @@
+/* stylelint-disable value-list-comma-newline-after */
 /* stylelint-disable csstree/validator */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
@@ -48,6 +49,10 @@ footer {
   display: flex;
   flex-flow: column;
   padding-bottom: 0.5rem;
+}
+
+button {
+  transition: 1s;
 }
 
 button:active {
@@ -123,7 +128,7 @@ button:active {
     background: #ebecf0;
     mix-blend-mode: multiply;
     border-radius: 8px;
-    background-image: url('images/cancel.png');
+    background-image: url("images/cancel.png");
     background-size: cover;
     background-position: center;
     background-clip: border-box;
@@ -954,7 +959,7 @@ button:active {
     height: 100%;
     border-radius: 8px;
     background-color: transparent;
-    background-image: url('images/cancel.png');
+    background-image: url("images/cancel.png");
     background-size: cover;
     background-position: center;
     background-clip: border-box;
@@ -1189,7 +1194,7 @@ button:active {
     height: 100%;
     border-radius: 8px;
     background-color: transparent;
-    background-image: url('images/Enable.png');
+    background-image: url("images/Enable.png");
     background-size: cover;
     background-position: center;
     background-clip: border-box;
@@ -1430,7 +1435,7 @@ button:active {
     height: 100%;
     width: 95vw;
     left: 0;
-    top: 8;
+    top: 25px;
     background-color: #fff;
     background-position: center;
     margin-top: 5%;
@@ -2009,15 +2014,21 @@ button:active {
   transition: color 0.6s;
 }
 
+button:hover {
+  opacity: 0.7;
+}
+
 .work-card {
   transform: rotateY(05deg) skewX(-0deg);
   transition: transform 0.5s, box-shadow 0.5s;
 }
 
 .work-card:hover {
-  transform: rotateY(40deg) skewX(-2deg) translateY((-3rem));
-  box-shadow: 2rem 2rem 2rem var(--buttons-color);
-  border-radius: 20%;
+  /* stylelint-disable-next-line declaration-colon-newline-after */
+  box-shadow: 0.5rem 0.5rem 0.1rem var(--buttons-color), 1rem 1rem 0.1rem #a2e946,
+    1.5rem 1.5rem 0.1rem var(--buttons-color), 2rem 2rem 0.1rem var(--buttons-color);
+  filter: blur(0.5s);
+  transform: scale(1.05);
 }
 
 .asset-card {
