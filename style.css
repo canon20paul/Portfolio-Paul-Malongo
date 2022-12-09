@@ -52,7 +52,7 @@ footer {
 }
 
 button {
-  transition: 1s;
+  transition: 5s;
 }
 
 button:active {
@@ -87,11 +87,54 @@ button:active {
     z-index: 3;
   }
 
+  @keyframes fade {
+    0% {
+      opacity: 1;
+      display: flex;
+    }
+
+    11.11% {
+      opacity: 0;
+    }
+
+    33.33% {
+      opacity: 0;
+    }
+
+    76.44% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
   .wrap1-img {
-    width: 100%;
-    display: flex;
+    width: 55%;
     justify-content: center;
-    margin-top: -3rem;
+    margin-top: 4rem;
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    left: 24%;
+  }
+
+  .wrap1-img:nth-child(1) {
+    animation-delay: 0s;
+    z-index: 0;
+  }
+
+  .wrap1-img:nth-child(2) {
+    animation-delay: 6s;
+    z-index: 50;
+  }
+
+  .wrap1-img:nth-child(3) {
+    animation-delay: 12s;
+    z-index: 100;
   }
 
   .wrap1-img-img {
@@ -120,11 +163,12 @@ button:active {
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
+    border: red thick 3px;
   }
 
   .xx-img {
     width: 4rem;
-    height: 100%;
+    height: 4%;
     background: #ebecf0;
     mix-blend-mode: multiply;
     border-radius: 8px;
@@ -133,9 +177,14 @@ button:active {
     background-position: center;
     background-clip: border-box;
     border: none;
+    border: red thick 3px;
+    position: absolute;
+    top: 5.5%;
+    right: 24%;
   }
 
   .wrap-header h3 {
+    margin-top: 4em;
     width: 50%;
     font-family: "Inter", "Courier New", Courier, monospace;
     font-style: normal;
@@ -147,7 +196,7 @@ button:active {
 
   .wrap-bottom {
     margin: auto;
-    margin-top: 10em;
+    margin-top: 7em;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -166,13 +215,13 @@ button:active {
     line-height: 26px;
     text-align: justify;
     color: #344563;
-    margin-bottom: 1em;
+    margin-top: em;
   }
 
   .wrap-bottom ul {
     width: max-content;
     margin-left: 1.8rem;
-    margin-top: -8rem;
+    margin-top: 10rem;
     margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
@@ -244,7 +293,7 @@ button:active {
     width: 124px;
     height: 48px;
     left: calc(51.5% - 124px / 2 + 91px);
-    bottom: 23em;
+    bottom: 36%;
     background: #36b37e;
     border-radius: 8px;
     line-height: 12px;
@@ -262,7 +311,7 @@ button:active {
     width: 144px;
     height: 48px;
     left: calc(62.5% - 124px / 2 + 91px);
-    bottom: 23em;
+    bottom: 36%;
     background: #36b37e;
     border-radius: 8px;
     line-height: 12px;
@@ -525,6 +574,7 @@ button:active {
     z-index: 0;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
+    transition: 1s;
   }
 
   .work-title {
@@ -551,6 +601,7 @@ button:active {
     font-size: 1.2rem;
     background: var(--lighterG2);
     border-radius: 4px;
+    transition: 1s;
   }
 
   .buttonW {
@@ -685,6 +736,7 @@ button:active {
     background: var(--lighterG2);
     border: 1px solid #d0d9d4;
     border-radius: 8px;
+    transition: 1s;
   }
 
   .languages .llang {
@@ -922,7 +974,8 @@ button:active {
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    margin-top: -10rem;
+    margin-top: 5rem;
+    margin-left: -15rem;
   }
 
   .wrap1-img-img {
@@ -951,12 +1004,12 @@ button:active {
     align-items: flex-start;
     justify-content: flex-end;
     color: #fff;
-    z-index: 50;
+    z-index: 1000;
   }
 
   .xx-img {
     width: 4rem;
-    height: 100%;
+    height: 4%;
     border-radius: 8px;
     background-color: transparent;
     background-image: url("images/cancel.png");
@@ -964,6 +1017,7 @@ button:active {
     background-position: center;
     background-clip: border-box;
     border: none;
+    margin-right: 0;
   }
 
   .wrap-header h3 {
@@ -975,12 +1029,12 @@ button:active {
     font-size: 3rem;
     line-height: 4.6rem;
     color: #172b4d;
-    margin-top: -8rem;
+    margin-top: 0;
   }
 
   .wrap-bottom {
     margin: auto;
-    margin-top: 5em;
+    margin-top: 10em;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -2015,7 +2069,12 @@ button:active {
 }
 
 button:hover {
-  opacity: 0.7;
+  color: var(--buttons-color);
+  background-color: #fff;
+}
+
+.lang-list-item:hover {
+  color: var(--buttons-color);
 }
 
 .work-card {
@@ -2025,10 +2084,23 @@ button:hover {
 
 .work-card:hover {
   /* stylelint-disable-next-line declaration-colon-newline-after */
-  box-shadow: 0.5rem 0.5rem 0.1rem var(--buttons-color), 1rem 1rem 0.1rem #ffffff,
-    1.5rem 1.5rem 0.1rem var(--buttons-color), 2rem 2rem 0.1rem var(--buttons-color);
+  box-shadow: 0.5rem 0.5rem 0.1rem var(--buttons-color), 1rem 1rem 0.1rem #fff,
+    1.5rem 1.5rem 0.1rem var(--buttons-color),
+    2rem 2rem 0.1rem var(--buttons-color);
   filter: blur(0.5s);
   transform: scale(1.05);
+}
+
+.work-card img:hover {
+  /* stylelint-disable-next-line declaration-colon-newline-after */
+  box-shadow: 0.1rem 0.1rem 0.1rem var(--buttons-color),
+    0.3rem 0.3rem 0.1rem #fff, 0.5rem 0.5rem 0.1rem var(--buttons-color),
+    0.7rem 0.7rem 0.1rem #fff, 0.9rem 0.9rem 0.1rem var(--buttons-color),
+    1.1rem 1.1rem 0.1rem #fff, 1.3rem 1.3rem 0.1rem var(--buttons-color),
+    1.5rem 1.5rem 0.1rem #fff;
+  filter: blur(0.5s);
+  transform: scale(0.95, 1);
+  transform: translate(-15px);
 }
 
 .asset-card {

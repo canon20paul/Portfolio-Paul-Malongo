@@ -1,61 +1,91 @@
 const projectsC = document.querySelector('.works');
 const works = [
   {
-    title: 'Keeping track of hundreds of components',
+    title: 'Awesome-books-ES6',
+    imgTitle1: 'Add a New Book Tab',
+    imgTitle2: 'Keeping track of hundreds of components',
+    imgTitle3: 'Keeping track of hundreds of components',
     description:
-            'A daily selection of privately Personalized reads; no accounts or Signups required, has been the industry" s standard dummy text eveer since the 1500s, when an unknown Printer took a standard dummy text.',
-    detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
-    featured_image: 'images/5G.png',
-    lang_list: ['css', 'html', 'bootsrap', 'Ruby', 'Github', 'Codekit', 'Codepen'],
-    source: 'https://github.com/canon20paul/My-Portfolio-Paul-Malongo',
+            'Awesome-books ES6 is primarily built on ES6 standards, an Application that Captures & deletes Books. Built with JavaScript, Html, CSS entered',
+    detail: "Awesome-books ES6 is primarily built on ES6 standards, an Application that Captures & deletes Books. Built with JavaScript, Html, CSS entered Awesome Books is a simple Books managment app that can best fit a library in which a user can add and remove books. the webpage will show the user current books in local storage.built with vanilla JavaScript",
+    featured_image1: 'images/AwesomeBooks.png',
+    featured_image2: 'images/AwesomeBooks1.png',
+    featured_image3: 'images/AwesomeBooks2.png',
+    lang_list: ['css', 'html', 'JavaScript',  'Github'],
+    source: 'https://github.com/canon20paul/Portfolio-Paul-Malongo',
     live_demo: ' https://canon20paul.github.io/Portfolio-Paul-Malongo/',
   },
   {
-    title: 'Multi-post Stories2 Gain+Glory',
+    title: 'LeaderBoard Game Data App',
+    imgTitle1: 'Keeping track of hundreds of components',
+    imgTitle2: 'Keeping track of hundreds of components',
+    imgTitle3: 'Keeping track of hundreds of components',
     description:
-            'A daily selection of privately Personalized reads; no accounts or Signups required, has been the industry" s standard dummy text eveer since the 1500s, when an unknown Printer took a standard dummy text.',
-    detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
-    featured_image: 'images/5G.png',
-    lang_list: ['Github', 'Codekit', 'Codepen'],
-    source: 'https://github.com/canon20paul/My-Portfolio-Paul-Malongo',
-    live_demo: ' https://canon20paul.github.io/Portfolio-Paul-Malongo/',
+            'A simple Leaderboard Application Project. An application that Captures and manages game scores.',
+    detail: "A simple Leaderboard Application Project. An application that Captures and manages game scores. A Game is initialized by pulling an id using an API after which records are taken and utilized. Asides Html5 and CSS, its Interactions are enhanced with JavaScript and Bundled with webpack.",
+    featured_image1: 'images/leaderboard.png',
+    featured_image2: 'images/leaderboard1.png',
+    featured_image3: 'images/leaderboard.png',
+    lang_list: ['Github', 'webpack', 'Html', 'javaScript', 'css'],
+    source: 'https://github.com/canon20paul/Leaderboard',
+    live_demo: 'https://canon20paul.github.io/Leaderboard/',
   },
   {
-    title: 'Multi-post Stories3 Gain+Glory',
+    title: 'Jobster API + FrontEnd',
+    imgTitle1: 'Keeping track of hundreds of components',
+    imgTitle2: 'Keeping track of hundreds of components',
+    imgTitle3: 'Keeping track of hundreds of components',
     description:
-            'A daily selection of privately Personalized reads; no accounts or Signups required, has been the industry" s standard dummy text eveer since the 1500s, when an unknown Printer took a standard dummy text.',
-    detail: "Lore   Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
-    featured_image: 'images/5G.png',
-    lang_list: ['css', 'html', 'bootsrap', 'Ruby', 'Github', 'Codekit', 'Codepen'],
-    source: 'https://github.com/canon20paul/My-Portfolio-Paul-Malongo',
-    live_demo: ' https://canon20paul.github.io/Portfolio-Paul-Malongo/',
+            'The JobsterAPI is built from Modification to a copy of a JobsAPI project to Link it to a React FrontEnd pre built in a client file with additional data.',
+    detail: "The JobsterAPI is built from Modification to a copy of a JobsAPI project to Link it to a React FrontEnd pre built in a client file with additional data. Profile Interface to Manage userdetails - Add job interface to add and remove jobs - Alljobs interface to search and display jobs - Stats interface to provide relevant job Application processes",
+    featured_image1: 'images/jobster1.png',
+    featured_image2: 'images/jobster2.png',
+    featured_image3: 'images/jobster3.png',
+    lang_list: ['css', 'html', 'React', 'Nodejs', 'Github', 'express', 'javascript','mongoDb','jwt'],
+    source: 'https://github.com/canon20paul/JobsterAPI-FrontEnd',
+    live_demo: 'https://node-course-jobster-api-10vu.onrender.com//',
   },
   {
     title: 'Multi-post Stories4 Gain+Glory',
+    imgTitle1: 'Keeping track of hundreds of components',
+    imgTitle2: 'Keeping track of hundreds of components',
+    imgTitle3: 'Keeping track of hundreds of components',
     description:
             'A daily selection of privately Personalized reads; no accounts or Signups required, has been the industry" s standard dummy text eveer since the 1500s, when an unknown Printer took a standard dummy text.',
     detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
-    featured_image: 'images/5G.png',
+    featured_image1: 'images/AwesomeBooks.png',
+    featured_image2: 'images/AwesomeBooks.png',
+    featured_image3: 'images/AwesomeBooks.png',
     lang_list: ['css', 'html', 'bootsrap', 'Ruby', 'Github', 'Codekit', 'Codepen'],
     source: 'https://github.com/canon20paul/My-Portfolio-Paul-Malongo',
     live_demo: ' https://canon20paul.github.io/Portfolio-Paul-Malongo/',
   },
   {
     title: 'Multi-post Stories5 Gain+Glory',
+    imgTitle1: 'Keeping track of hundreds of components',
+    imgTitle2: 'Keeping track of hundreds of components',
+    imgTitle3: 'Keeping track of hundreds of components',
     description:
             'A daily selection of privately Personalized reads; no accounts or Signups required, has been the industry" s standard dummy text eveer since the 1500s, when an unknown Printer took a standard dummy text.',
     detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
-    featured_image: 'images/5G.png',
+    featured_image1: 'images/AwesomeBooks.png',
+    featured_image2: 'images/AwesomeBooks.png',
+    featured_image3: 'images/AwesomeBooks.png',
     lang_list: ['css', 'html', 'bootsrap', 'Ruby', 'Github', 'Codekit', 'Codepen'],
     source: 'https://github.com/canon20paul/My-Portfolio-Paul-Malongo',
     live_demo: ' https://canon20paul.github.io/Portfolio-Paul-Malongo/',
   },
   {
     title: 'Multi-post Stories6 Gain+Glory',
+    imgTitle1: 'Keeping track of hundreds of components',
+    imgTitle2: 'Keeping track of hundreds of components',
+    imgTitle3: 'Keeping track of hundreds of components',
     description:
             'A daily selection of privately Personalized reads; no accounts or Signups required, has been the industry" s standard dummy text eveer since the 1500s, when an unknown Printer took a standard dummy text.',
     detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
-    featured_image: 'images/5G.png',
+    featured_image1: 'images/AwesomeBooks.png',
+    featured_image2: 'images/AwesomeBooks.png',
+    featured_image3: 'images/AwesomeBooks.png',
     lang_list: ['css', 'html', 'bootsrap', 'Ruby', 'Github', 'Codekit', 'Codepen'],
     source: 'https://github.com/canon20paul/My-Portfolio-Paul-Malongo',
     live_demo: ' https://canon20paul.github.io/Portfolio-Paul-Malongo/',
@@ -87,7 +117,7 @@ let workCard = '';
 const appendWorks = (works) => {
   for (let i = 0; i < works.length; i += 1) {
     workCard += ` <div class="workp${i + 1} work-card">
-        <img class="Wimage" src="${works[i].featured_image}" alt="${works[i].title}" />
+        <img class="Wimage" src="${works[i].featured_image1}" alt="${works[i].imgTitle1}" />
         <div class="work-frame">
         <h3 class="work-title">${works[i].title}</h3>
       <ul class="lang" id="card-languages">
@@ -110,7 +140,9 @@ function popUpDiv(j) {
   wrap1.classList.add('wrap1');
   wrap1.innerHTML = ` <section class="wrap"><div class="wrap1">
   <div class="xx"><input type="submit" value="" class="xx-img"  onclick="removeBlur()" /></div>
-  <div class="wrap1-img"><img class="wrap1-img-img" src="${works[j].featured_image}" alt="${works[j].title}" /></div>
+  <div class="wrap1-img"><img class="wrap1-img-img" src="${works[j].featured_image1}" alt="${works[j].imgTitle1}" /></div>
+  <div class="wrap1-img"><img class="wrap1-img-img" src="${works[j].featured_image2}" alt="${works[j].imgTitle2}" /></div>
+  <div class="wrap1-img"><img class="wrap1-img-img" src="${works[j].featured_image3}" alt="${works[j].imgTitle3}" /></div>
   <div id="wrap-header" class="wrap-header"><h3>${works[j].title}</h3></div>
   <div class="wrap-bottom">
   <ul class="lang" id="card-languages">
