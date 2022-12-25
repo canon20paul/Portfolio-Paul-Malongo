@@ -1,6 +1,3 @@
-
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Personal Portofolio Project
 
 > First Project Mearnt to demonstrate a Personal Portofolio
